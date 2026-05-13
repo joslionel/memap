@@ -53,15 +53,15 @@ function parseItemEmbedded(items, filename) {
     .trim()
 
   const loci = items
-    .filter(item => item.userEdits?.locus && item.locusNumber != null)
-    .sort((a, b) => (a.locusNumber ?? 0) - (b.locusNumber ?? 0))
+    .filter(item => item.userEdits?.locus)   // skip items with no locus assigned
     .map((item, i) => ({
-      position: item.locusNumber ?? i,
+      position: item.locusNumber ?? i,        // use locusNumber if present, else array order
       name: item.userEdits.locus,
       descriptor: item.userEdits.locusNote ?? '',
       notes: '',
       coords: item.userEdits.coords ?? null,
     }))
+    .sort((a, b) => a.position - b.position)
 
   return { name, description: '', loci }
 }
