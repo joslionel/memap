@@ -16,6 +16,39 @@ export const FIELD_MAP = {
   end: 'endDate',
   start_date: 'startDate',
   end_date: 'endDate',
+  locus: 'locus',
+  dateImage: 'dateImage',
+  date_image: 'dateImage',
+}
+
+// userEdits sub-fields that get flattened into the item, with their schema metadata
+const USER_EDITS_FIELDS = {
+  mnemonic:  { overrides: 'mnemonic',  schemaKey: null },          // overrides top-level → imagery
+  notes:     { overrides: 'notes',     schemaKey: null },          // overrides top-level → notes
+  locus:     { overrides: null,        schemaKey: { key: 'locus',     label: 'Locus',      type: 'text' } },
+  dateImage: { overrides: null,        schemaKey: { key: 'dateImage', label: 'Date image', type: 'text' } },
+}
+
+/**
+ * Flatten userEdits sub-fields into the top-level item so the regular
+ * mapping pipeline sees them as ordinary keys.
+ * Call this on rawItems immediately after parseRaw.
+ */
+export function preprocessItems(rawItems) {
+  return rawItems.map(item => {
+    if (!item.userEdits || typeof item.userEdits !== 'object') return item
+    const ue = item.userEdits
+    const flat = { ...item }
+    for (const [ueKey, { overrides }] of Object.entries(USER_EDITS_FIELDS)) {
+      const val = ue[ueKey]
+      if (val && typeof val === 'string' && val.trim()) {
+        // userEdits values take priority: they either override an existing top-level
+        // key (mnemonic, notes) or introduce a brand-new key (locus, dateImage)
+        flat[overrides ?? ueKey] = val.trim()
+      }
+    }
+    return flat
+  })
 }
 
 // Canonical schema fields every set has
@@ -79,6 +112,16 @@ export function detectMapping(rawItems, meta) {
     }
   }
 
+  // Surface userEdits-derived fields that now exist as top-level keys after preprocessing
+  for (const { schemaKey } of Object.values(USER_EDITS_FIELDS)) {
+    if (!schemaKey) continue
+    if (rawItems.some(i => i[schemaKey.key])) {
+      if (!extraFields.find(f => f.key === schemaKey.key)) {
+        extraFields.push({ ...schemaKey, required: false })
+      }
+    }
+  }
+
   return { suggestedMappings, extraFields, hasDates }
 }
 
@@ -94,14 +137,6 @@ export function normaliseItem(raw, mappings, position) {
     if (val !== undefined && val !== null && val !== '') {
       data[destKey] = val
     }
-  }
-
-  // Pull user-edited mnemonic if the canonical one is blank
-  if (!data.imagery && raw.userEdits?.mnemonic) {
-    data.imagery = raw.userEdits.mnemonic
-  }
-  if (!data.notes && raw.userEdits?.notes) {
-    data.notes = raw.userEdits.notes
   }
 
   return {

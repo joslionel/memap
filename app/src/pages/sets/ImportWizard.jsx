@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import { parseRaw, detectMapping, normaliseItem, buildSchema, STANDARD_FIELDS, DATE_FIELDS, FIELD_MAP } from '../../lib/jsonImport'
+import { parseRaw, preprocessItems, detectMapping, normaliseItem, buildSchema, STANDARD_FIELDS, DATE_FIELDS, FIELD_MAP } from '../../lib/jsonImport'
 import { createSet, upsertItems } from '../../lib/db'
 import { useAuth } from '../../contexts/AuthContext'
 import Button from '../../components/ui/Button'
@@ -43,7 +43,8 @@ export default function ImportWizard() {
     setError('')
     try {
       const text = await file.text()
-      const { meta: m, rawItems: items } = parseRaw(text)
+      const { meta: m, rawItems: raw } = parseRaw(text)
+      const items = preprocessItems(raw)
       const { suggestedMappings, extraFields: extras, hasDates: dates } = detectMapping(items, m)
       setRawItems(items)
       setMeta(m)
