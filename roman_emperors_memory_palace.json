@@ -1,0 +1,407 @@
+[
+  {
+    "id": "augustus",
+    "name": "Augustus",
+    "dynasty": "Julio-Claudian",
+    "start": -27,
+    "end": 14,
+    "fact": "First emperor; 'Pax Romana' — 200 years of relative peace begins. Transformed Rome from republic to empire so smoothly nobody quite noticed.",
+    "mnemonic": "Augustus (August — the month named after him) sitting in a deckchair on a beach, sunbathing peacefully, while all around him a republic slowly, imperceptibly turns into an empire. He looks entirely innocent.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "tiberius",
+    "name": "Tiberius",
+    "dynasty": "Julio-Claudian",
+    "start": 14,
+    "end": 37,
+    "fact": "Effective general; became paranoid recluse on Capri; executed nobles on whims. Jesus was crucified under his reign.",
+    "mnemonic": "Tiberius (a tiger — Tib-tiger) hiding in a cave on an island, swiping his claws at senators brought before him, while on a distant hill a crucifixion takes place. He doesn't look up.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "caligula",
+    "name": "Caligula",
+    "dynasty": "Julio-Claudian",
+    "start": 37,
+    "end": 41,
+    "fact": "Made his horse a consul. Declared himself a god. Assassinated by his own guards after 4 years of spectacular lunacy.",
+    "mnemonic": "Caligula (Caligula = 'little boot' — picture tiny boots) fitting a toga and a consul's laurel onto a horse, while declaring himself a god to anyone who'll listen. His guards are already drawing their swords.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "claudius",
+    "name": "Claudius",
+    "dynasty": "Julio-Claudian",
+    "start": 41,
+    "end": 54,
+    "fact": "Dismissed as an idiot; actually a serious scholar. Conquered Britain in 43 AD. Probably poisoned by his wife Agrippina.",
+    "mnemonic": "Claudius (the TV series — Derek Jacobi, stuttering, limping, clever) landing in Britain in full armour looking surprised it worked, then being handed a poisoned mushroom by his elegant, smiling wife.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "nero",
+    "name": "Nero",
+    "dynasty": "Julio-Claudian",
+    "start": 54,
+    "end": 68,
+    "fact": "Killed his own mother. Fiddled while Rome burned (apocryphal). First persecutor of Christians. Committed suicide aged 30.",
+    "mnemonic": "Nero (rhymes with hero — he thought himself one) playing a lyre on a balcony while Rome burns behind him, his mother's ghost hovering accusingly. Christians are being chased in the background. He's writing poetry.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "galba",
+    "name": "Galba",
+    "dynasty": "Year of Four Emperors",
+    "start": 68,
+    "end": 69,
+    "fact": "First of four emperors in one year. Old, stingy, hated by the army. Murdered in the Forum after 7 months.",
+    "mnemonic": "Galba (a gallbladder — bitter, wizened) an ancient general counting coins very slowly while soldiers sharpen swords behind him. He lasts about as long as it takes to count to seven.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "otho",
+    "name": "Otho",
+    "dynasty": "Year of Four Emperors",
+    "start": 69,
+    "end": 69,
+    "fact": "Nero's best friend and ex-husband of Poppaea. Reigned 95 days; committed suicide after losing one battle rather than drag out the war.",
+    "mnemonic": "Otto (like Otto from The Simpsons — laid back, not really suited to this) sitting in Nero's old chair for about three months before shrugging, drawing his sword, and falling on it elegantly. Very civilised.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "vitellius",
+    "name": "Vitellius",
+    "dynasty": "Year of Four Emperors",
+    "start": 69,
+    "end": 69,
+    "fact": "Consumed enormous meals; famous for gluttony. Dragged through Rome and killed after 8 months.",
+    "mnemonic": "Vitellius (vital — full of food) an enormous man eating four banquets simultaneously while being dragged through the streets by soldiers who can barely get a grip on him. He is still holding a drumstick.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "vespasian",
+    "name": "Vespasian",
+    "dynasty": "Flavian",
+    "start": 69,
+    "end": 79,
+    "fact": "Ended civil war; started the Colosseum; taxed public urinals ('money has no smell'). Died peacefully — unusual.",
+    "mnemonic": "Vespasian (vest + pasian — a man in a vest) building the Colosseum with one hand while pointing to a row of urinals with the other, collecting coins from them with enormous satisfaction. A very practical man.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "titus",
+    "name": "Titus",
+    "dynasty": "Flavian",
+    "start": 79,
+    "end": 81,
+    "fact": "Vesuvius erupted (79 AD) in his first year. Beloved emperor — generous disaster relief. Died after only 2 years.",
+    "mnemonic": "Titus (tight-us — holding tightly to things) clinging desperately to his throne as Vesuvius erupts behind him, raining ash and pumice. He's writing disaster relief cheques with one hand while being buried.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "domitian",
+    "name": "Domitian",
+    "dynasty": "Flavian",
+    "start": 81,
+    "end": 96,
+    "fact": "Paranoid tyrant who demanded to be called 'Lord and God.' Assassinated by his own household staff including his wife.",
+    "mnemonic": "Domitian (domineering — dom-itian) in a golden toga insisting everyone call him God, while behind him his butler, secretary, and wife are clearly planning something. He is entirely unaware.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "nerva",
+    "name": "Nerva",
+    "dynasty": "Five Good Emperors",
+    "start": 96,
+    "end": 98,
+    "fact": "First of the Five Good Emperors. Old senator chosen as compromise. Brilliantly adopted Trajan as heir — the succession system that made Rome great again.",
+    "mnemonic": "Nerva (nerve — nervy, cautious) a very old, very nervous senator perched on the throne, immediately finding the biggest most capable man in Rome (Trajan) and adopting him on the spot. He looks enormously relieved.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "trajan",
+    "name": "Trajan",
+    "dynasty": "Five Good Emperors",
+    "start": 98,
+    "end": 117,
+    "fact": "Greatest military emperor. Rome reached its maximum territorial extent. Trajan's Column still stands in Rome.",
+    "mnemonic": "Trajan (train — unstoppable) like a freight train in armour, expanding the empire in every direction with a map that keeps growing, while a giant stone column documenting everything shoots up behind him.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "hadrian",
+    "name": "Hadrian",
+    "dynasty": "Five Good Emperors",
+    "start": 117,
+    "end": 138,
+    "fact": "Built Hadrian's Wall. Spent most of his reign travelling the empire. Brilliant architect and poet. First emperor with a beard.",
+    "mnemonic": "Hadrian (had-rian — had everything) a bearded emperor building a great wall across northern Britain while writing poetry, then immediately getting back on his horse to tour the whole empire. A Renaissance man, 1,400 years early.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "antoninus-pius",
+    "name": "Antoninus Pius",
+    "dynasty": "Five Good Emperors",
+    "start": 138,
+    "end": 161,
+    "fact": "Longest-reigning of the Five Good Emperors. So peaceful his reign is almost boring — the highest possible compliment for Rome.",
+    "mnemonic": "Antoninus Pius (Pious Anton — an extremely pious man, very pius) sitting in serenity for 23 years while absolutely nothing catastrophic happens. He looks content. Historians yawn. This is the dream.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "marcus-aurelius",
+    "name": "Marcus Aurelius",
+    "dynasty": "Five Good Emperors",
+    "start": 161,
+    "end": 180,
+    "fact": "Philosopher-emperor. Wrote 'Meditations' on Stoicism while on campaign. Called the last of the Five Good Emperors. His son Commodus ended the golden age.",
+    "mnemonic": "Marcus Aurelius (Marcus from Gladiator — this IS the image) writing philosophy by candlelight in a tent on the German frontier, occasionally looking up to give wise commands, knowing his useless son is waiting to ruin everything.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "commodus",
+    "name": "Commodus",
+    "dynasty": "Severan transition",
+    "start": 180,
+    "end": 192,
+    "fact": "Renamed Rome after himself. Fought in the Colosseum as a gladiator (rigged). Strangled in his bath by a wrestler hired by conspirators.",
+    "mnemonic": "Commodus (Joaquin Phoenix from Gladiator — this IS the image) strutting into the Colosseum dressed as Hercules, fighting obviously terrified opponents, then being strangled in his own bathtub by an enormous hired wrestler.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "septimius-severus",
+    "name": "Septimius Severus",
+    "dynasty": "Severan",
+    "start": 193,
+    "end": 211,
+    "fact": "First African-born emperor. Came to power after 'Year of Five Emperors.' Died in York while campaigning in Britain.",
+    "mnemonic": "Septimius (seven — sept — seven emperors in his era) an African general arriving in Rome to sort out the chaos of five emperors, then dying in Yorkshire of all places, armour still on, baffled by the weather.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "caracalla",
+    "name": "Caracalla",
+    "dynasty": "Severan",
+    "start": 198,
+    "end": 217,
+    "fact": "Gave Roman citizenship to all free inhabitants of the empire (212 AD). Also murdered his brother Geta at their mother's breast. Great baths still stand in Rome.",
+    "mnemonic": "Caracalla (car + calla lily) distributing citizenship papers to absolutely everyone with one hand while murdering his brother with the other — their mother screaming — then going to relax in an enormous bathhouse.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "diocletian",
+    "name": "Diocletian",
+    "dynasty": "Crisis resolution",
+    "start": 284,
+    "end": 305,
+    "fact": "Split the empire into East and West tetrarchy. Ended the Crisis of the Third Century. Voluntarily retired to grow cabbages in Split (Croatia).",
+    "mnemonic": "Diocletian (die-o-clean — cleaning up the mess) taking the shattered empire and slicing it neatly in two with a sword, then handing half to a colleague, before literally retiring to a garden to tend enormous cabbages. Content.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "constantine",
+    "name": "Constantine I (the Great)",
+    "dynasty": "Constantinian",
+    "start": 306,
+    "end": 337,
+    "fact": "First Christian emperor; founded Constantinople (330 AD); convened Council of Nicaea. Reunified the empire. Baptised on his deathbed.",
+    "mnemonic": "Constantine (Constantine from the film — Keanu Reeves fighting demons) seeing a cross in the sky before battle, converting to Christianity, then founding a brand new city on the Bosphorus, getting baptised at the very last possible moment.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "julian",
+    "name": "Julian (the Apostate)",
+    "dynasty": "Constantinian",
+    "start": 361,
+    "end": 363,
+    "fact": "Last pagan emperor — tried to reverse Christianity, restore old gods. Died on campaign in Persia after only 2 years. Called 'the Apostate' by Christians.",
+    "mnemonic": "Julian (Julian Assange energy — brilliant contrarian) tearing down Christian symbols and putting back statues of Jupiter and Mars, everyone looking confused, then dying in the Persian desert on a quixotic campaign, too soon.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "theodosius",
+    "name": "Theodosius I (the Great)",
+    "dynasty": "Theodosian",
+    "start": 379,
+    "end": 395,
+    "fact": "Last emperor to rule the whole empire. Made Christianity the official state religion (380 AD). On his death, empire permanently split between his two sons.",
+    "mnemonic": "Theodosius (theo — god, dosis — dose) giving Rome a big dose of Christianity — banning pagan worship, Christianity is now the law — then on his deathbed handing the empire like a broken toy to two squabbling boys.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "honorius",
+    "name": "Honorius",
+    "dynasty": "Theodosian",
+    "start": 395,
+    "end": 423,
+    "fact": "Reigned during the sack of Rome by Visigoths (410 AD) — first time Rome was sacked in 800 years. Reportedly more upset about the death of his pet chicken 'Roma' than the city.",
+    "mnemonic": "Honorius (honour-less) a feeble man in Ravenna cradling a chicken called Roma, completely indifferent as Visigoths sack the actual Rome in the background. He weeps for the chicken. Rome can look after itself.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "attila-note",
+    "name": "⚡ Attila the Hun (not emperor — nemesis)",
+    "dynasty": "External threat",
+    "start": 434,
+    "end": 453,
+    "fact": "Not an emperor — but ravaged the Western Empire in the 440s–450s. Turned back from Rome by Pope Leo I in 452. Died on his wedding night.",
+    "mnemonic": "Attila (a tiller — ploughing up everything) a terrifying horseman ploughing through Europe, stopped inexplicably at the gates of Rome by a single old man in white robes (Leo I), then dying in bed on his wedding night. Anticlimactic.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "valentinian-iii",
+    "name": "Valentinian III",
+    "dynasty": "Theodosian",
+    "start": 425,
+    "end": 455,
+    "fact": "Personally stabbed his own best general Aetius — the last man capable of defending the West. Rome sacked by Vandals the next year.",
+    "mnemonic": "Valentinian (valentine — stabs people in the heart) a cowardly emperor personally stabbing the one competent general in the whole West, then looking baffled when Vandals sack Rome the very next year. The definition of own goal.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "id": "romulus-augustulus",
+    "name": "Romulus Augustulus",
+    "dynasty": "Last Western emperors",
+    "start": 475,
+    "end": 476,
+    "fact": "Last Western Roman Emperor. Deposed by Odoacer the barbarian in 476 AD. Name bitterly ironic — Romulus (the first king) + Augustulus ('little Augustus'). Allowed to retire peacefully.",
+    "mnemonic": "Romulus Augustulus (little Romulus, little Augustus — a tiny figure with a huge name) a teenage boy in an oversized imperial toga, being gently but firmly removed from his throne by a large barbarian, given a pension, and sent to a nice villa. The empire ends with a shrug, not a bang.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  }
+]

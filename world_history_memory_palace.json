@@ -1,0 +1,1923 @@
+[
+  {
+    "type": "monarch",
+    "id": "fire-control",
+    "name": "Controlled Use of Fire",
+    "house": "Africa / Eurasia",
+    "era": "Prehistoric",
+    "start": -1000000,
+    "end": null,
+    "fact": "Homo erectus tames fire at sites like Wonderwerk Cave, South Africa. Cooking transforms human digestion, brain size, and social life — arguably the single biggest leap in human development.",
+    "mnemonic": "A bewildered caveman sitting in front of a roaring fire, holding a raw mammoth sausage on a stick, trying to work out what the invisible thing is that keeps making food taste better.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "out-of-africa",
+    "name": "Out of Africa Migration",
+    "house": "Global",
+    "era": "Prehistoric",
+    "start": -70000,
+    "end": null,
+    "fact": "Homo sapiens begin dispersing from Africa across the globe, reaching Arabia, then South Asia and Australia by ~65,000 BCE — long before Europe. The whole human world springs from this exodus.",
+    "mnemonic": "A long, weary queue of early humans shuffling out of a giant revolving door labelled 'AFRICA — No Re-Entry', each carrying a bindle stick, heading in every compass direction at once.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "cave-art",
+    "name": "Earliest Cave Art",
+    "house": "Europe / Indonesia",
+    "era": "Prehistoric",
+    "start": -45000,
+    "end": null,
+    "fact": "The oldest known figurative cave paintings appear in Sulawesi (Indonesia) and later Lascaux (France). The world's first artists painted bison, horses, and their own hand stencils by torchlight.",
+    "mnemonic": "A caveman lying on his back in a cramped cave, furiously daubing a charging bison on the ceiling, while his mate holds a tallow lamp above him and whispers 'the hooves are wrong'.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "agriculture",
+    "name": "Agricultural Revolution",
+    "house": "Fertile Crescent",
+    "era": "Prehistoric",
+    "start": -10000,
+    "end": null,
+    "fact": "Humans domesticate wheat, barley, lentils, sheep, and goats in the Fertile Crescent. Within a few thousand years farming spreads globally. Civilisation becomes possible; also backache, famine, and tax.",
+    "mnemonic": "A confused hunter-gatherer staring at a field of neatly planted wheat while a goat in a tiny apron hands him a seed packet and a mortgage agreement.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "catalhoyuk",
+    "name": "Çatalhöyük — First Town",
+    "house": "Anatolia",
+    "era": "Prehistoric",
+    "start": -7500,
+    "end": -5700,
+    "fact": "One of the world's first towns: ~8,000 people in mud-brick houses entered through holes in the roof — no streets, no obvious rulers. Walls painted with bulls. A genuinely odd place.",
+    "mnemonic": "A baffled urban planner staring at an architectural drawing that is just a grid of boxes with no doors, only ladders peeking from every roof, while the residents descend through their ceilings like reverse burglars.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "copper-smelting",
+    "name": "Copper Smelting Discovered",
+    "house": "Balkans / Middle East",
+    "era": "Prehistoric",
+    "start": -5500,
+    "end": null,
+    "fact": "Humans discover that certain rocks, heated in fire, yield workable metal. The Chalcolithic Age begins. The first metal objects are luxury ornaments — metallurgy starts as bling before it becomes weaponry.",
+    "mnemonic": "A Stone Age man staring open-mouthed at his campfire, where a rock has quietly melted into a shiny puddle. He immediately fashions it into a bracelet rather than a spear.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "uruk-city",
+    "name": "Rise of Uruk — First City",
+    "house": "Mesopotamia (Sumer)",
+    "era": "Ancient",
+    "start": -4000,
+    "end": -3000,
+    "fact": "Uruk becomes the world's first true city — population ~50,000. It has temples, full-time priests, merchants, and administrators. The world's first bureaucracy is born. Also its first traffic problems.",
+    "mnemonic": "50,000 Sumerians all doing paperwork simultaneously in a sandstone office block beside the Euphrates, arguing over who owns the irrigation canal, while a priest in a ziggurat looks down and takes his cut.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "writing-invention",
+    "name": "Invention of Writing (Cuneiform)",
+    "house": "Mesopotamia (Sumer)",
+    "era": "Ancient",
+    "start": -3200,
+    "end": null,
+    "fact": "Sumerians invent cuneiform — wedge-shaped marks on clay tablets. The first known texts are grain tallies. Writing is not invented for poetry or history; it is invented for accountancy.",
+    "mnemonic": "A Sumerian bureaucrat furiously stabbing a clay tablet with a reed stylus, surrounded by towering grain sacks, muttering 'seventeen barley, minus three, carry the goat…'",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "egypt-unification",
+    "name": "Unification of Egypt",
+    "house": "Egypt",
+    "era": "Ancient",
+    "start": -3100,
+    "end": null,
+    "fact": "Pharaoh Narmer (possibly legendary Menes) unites Upper and Lower Egypt and dons the double crown. The resulting civilisation would last in some form for three thousand years.",
+    "mnemonic": "A man ramming two completely different crown-shaped hats onto his head at once — one bulgy white, one flat red — while cheering crowds wave on either side of the Nile.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "stonehenge-begins",
+    "name": "Stonehenge Construction Begins",
+    "house": "Britain",
+    "era": "Ancient",
+    "start": -3000,
+    "end": -1500,
+    "fact": "Stonehenge is built in phases over 1,500 years. The first phase is a simple earthwork; the iconic bluestones travel 250 miles from Wales c.2,500 BCE. Its purpose — calendar, temple, burial site — remains debated.",
+    "mnemonic": "A Neolithic foreman squinting at architectural blueprints that are just a circle drawn in crayon, shouting 'right, we need that stone — the one in Wales' at a group of already exhausted labourers.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "indus-valley",
+    "name": "Indus Valley Civilisation Peaks",
+    "house": "South Asia",
+    "era": "Ancient",
+    "start": -2600,
+    "end": -1900,
+    "fact": "Mohenjo-daro and Harappa: meticulously grid-planned cities with proper sewers, standardised weights and bricks, and no obvious kings or palaces. The most egalitarian major civilisation of the ancient world — and still largely undeciphered.",
+    "mnemonic": "An Indus city engineer proudly pointing at a very sophisticated underground drain system while a jealous Egyptian pharaoh watches from afar, stroking his chin beside his pyramid.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "great-pyramid",
+    "name": "Great Pyramid of Giza Built",
+    "house": "Egypt",
+    "era": "Ancient",
+    "start": -2560,
+    "end": -2540,
+    "fact": "The Great Pyramid of Khufu is completed: 2.3 million stone blocks, ~20 years, ~20,000 workers (not slaves — paid labourers with healthcare). The tallest structure on Earth for 3,800 years.",
+    "mnemonic": "A very sweaty Egyptian carrying one final stone up an enormous ramp, only to reach the top and discover a smug foreman has already placed a capstone. He places his stone anyway and cries.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "akkadian-empire",
+    "name": "Akkadian Empire — First Empire",
+    "house": "Mesopotamia",
+    "era": "Ancient",
+    "start": -2334,
+    "end": -2154,
+    "fact": "Sargon of Akkad — reportedly a gardener's son — conquers Sumer and builds the world's first true empire. His granddaughter Enheduanna becomes history's first named author, writing hymns to the goddess Inanna.",
+    "mnemonic": "A soot-covered gardener trying on an enormous golden crown two sizes too big, one hand still holding a trowel. Nearby, his granddaughter is furiously writing poetry and demanding a byline.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "bronze-age-begins",
+    "name": "Bronze Age — Widespread Adoption",
+    "house": "Eurasia / Middle East",
+    "era": "Ancient",
+    "start": -2300,
+    "end": null,
+    "fact": "Alloying copper with tin produces bronze — vastly superior for tools and weapons. Bronze Age civilisations explode across Eurasia. The catch: tin and copper rarely occur together, forcing long-distance trade networks.",
+    "mnemonic": "A blacksmith looking enormously smug at a shiny bronze sword, then looking suddenly worried as he realises his tin supplier is three thousand miles away in Cornwall.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "hammurabi-code",
+    "name": "Code of Hammurabi",
+    "house": "Mesopotamia (Babylon)",
+    "era": "Ancient",
+    "start": -1754,
+    "end": null,
+    "fact": "Babylonian king Hammurabi inscribes 282 laws on a giant basalt stele, including the famous 'eye for an eye' principle. The first comprehensive legal code — though its punishments vary wildly by social class.",
+    "mnemonic": "Hammurabi reading out an enormous to-do list to a stonemason who is already on chisel-stroke number 200, sweating, while a poor man and a rich man stand nearby getting very different sentences for the same crime.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "hyksos-egypt",
+    "name": "Hyksos Invade Egypt",
+    "house": "Egypt",
+    "era": "Ancient",
+    "start": -1650,
+    "end": -1550,
+    "fact": "The Hyksos ('foreign rulers') seize Lower Egypt, introducing the horse, chariot, composite bow, and bronze weapons. Egypt is horrified — and learns every single trick from them before expelling them.",
+    "mnemonic": "A chariot bursting dramatically through the palace gates while the pharaoh screams 'What is that HORSE?!' — then, 100 years later, the same pharaoh riding a chariot and acting like he invented it.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "thera-eruption",
+    "name": "Eruption of Thera (Santorini)",
+    "house": "Aegean",
+    "era": "Ancient",
+    "start": -1620,
+    "end": null,
+    "fact": "One of the largest volcanic eruptions in human history devastates the Minoan civilisation of Crete and darkens skies globally. Possibly the origin of the Atlantis myth. Collapses Bronze Age trade networks across the Eastern Mediterranean.",
+    "mnemonic": "A Minoan merchant, halfway through a trade deal, watching an entire island vanish in a column of fire and ash, while his business partner says 'so... shall we reschedule?'",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "ramesses-ii",
+    "name": "Ramesses II & Battle of Kadesh",
+    "house": "Egypt / Hittites",
+    "era": "Ancient",
+    "start": -1274,
+    "end": null,
+    "fact": "Ramesses II fights the Hittites at Kadesh — the largest chariot battle in history. Neither side wins, but both claim total victory. They then sign history's first known peace treaty. Diplomacy is born.",
+    "mnemonic": "Two enormous armies of chariots crashing into each other in a total stalemate, then both kings immediately commissioning massive stone carvings showing themselves winning, before awkwardly signing the same piece of papyrus.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "bronze-age-collapse",
+    "name": "Bronze Age Collapse",
+    "house": "Eastern Mediterranean",
+    "era": "Ancient",
+    "start": -1200,
+    "end": -1150,
+    "fact": "Within 50 years, almost every major civilisation around the Eastern Mediterranean collapses simultaneously — Mycenaeans, Hittites, Ugarit, Kassites. Trade networks fail. Writing disappears in Greece for 400 years. The cause is still fiercely debated.",
+    "mnemonic": "A row of civilisations like dominoes — each wearing a little crown — toppling into each other in sequence. The last one standing is Egypt, barely, looking around at the smoking ruins going 'what just happened?'",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "iron-age-begins",
+    "name": "Iron Age Begins",
+    "house": "Middle East / Europe",
+    "era": "Ancient",
+    "start": -1200,
+    "end": null,
+    "fact": "After the Bronze Age Collapse disrupts tin supplies, iron-smelting spreads rapidly. Iron is harder, sharper, and — crucially — its ore is found almost everywhere. It democratises warfare and agriculture.",
+    "mnemonic": "A blacksmith gleefully throwing his tin supplier's business card in the fire, then forging a spectacular iron sword from a lump of rock he found in his garden.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "phoenician-alphabet",
+    "name": "Phoenician Alphabet",
+    "house": "Levant",
+    "era": "Ancient",
+    "start": -1050,
+    "end": null,
+    "fact": "The Phoenicians develop the first widely-used alphabet — 22 consonants, no vowels. It spreads everywhere via their trade networks, becoming the ancestor of Greek, Latin, Arabic, and Hebrew scripts — essentially every alphabet on Earth today.",
+    "mnemonic": "A Phoenician merchant at a harbour scribbling furiously on a clay tablet, smugly watching as every passing trader asks 'can I copy that?' and sails off with it to a different continent.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "assyrian-empire",
+    "name": "Neo-Assyrian Empire at Peak",
+    "house": "Mesopotamia",
+    "era": "Ancient",
+    "start": -900,
+    "end": -612,
+    "fact": "The Assyrians build history's first true military empire based on sheer terror — mass deportations, sieges, flayed enemies displayed on walls. Also, paradoxically, magnificent art, the world's first great library (Ashurbanipal's), and sophisticated administration.",
+    "mnemonic": "An Assyrian king simultaneously signing a deportation order, commissioning a beautiful lion-hunting bas-relief, and cataloguing a library — all with different hands, looking extremely busy and only slightly unhinged.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "homer-iliad",
+    "name": "Homer Composes the Iliad & Odyssey",
+    "house": "Greece",
+    "era": "Ancient",
+    "start": -800,
+    "end": null,
+    "fact": "Homer (possibly a single person, possibly a tradition) composes the Iliad and Odyssey — the foundational texts of Western literature. They were performed aloud for centuries before being written down.",
+    "mnemonic": "A blind poet holding court in a marketplace, dramatically acting out a sea voyage with a stick while a crowd weeps, and a scribe in the corner scribbles everything down 200 years too late.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "rome-founded",
+    "name": "Rome Founded (Traditional Date)",
+    "house": "Italy",
+    "era": "Ancient",
+    "start": -753,
+    "end": null,
+    "fact": "Rome is traditionally founded in 753 BCE by Romulus (who immediately kills his twin brother Remus in a planning dispute). In reality a Latin village on the Tiber, it will eventually rule most of the known world.",
+    "mnemonic": "Two brothers standing on a hill arguing about where to build a city. One kills the other. The survivor names the city after himself, already regretting the decision.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "buddha-born",
+    "name": "Life of the Buddha",
+    "house": "South Asia (Nepal / India)",
+    "era": "Ancient",
+    "start": -563,
+    "end": -483,
+    "fact": "Siddhartha Gautama, a prince in what is now Nepal, abandons luxury, meditates under a Bodhi tree, and achieves enlightenment. His teachings on suffering and impermanence spread across Asia, shaping a billion lives.",
+    "mnemonic": "An extremely well-dressed prince walking out of a palace, removing layer after layer of finery until he is sitting under a tree in a thin robe, looking entirely serene while everyone else looks baffled.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "confucius",
+    "name": "Confucius & the Analects",
+    "house": "China",
+    "era": "Ancient",
+    "start": -551,
+    "end": -479,
+    "fact": "Kong Qiu (Confucius) wanders China offering advice on ethics, family, and governance to rulers who mostly ignore him. His students record his sayings. Two millennia later, his ideas underpin East Asian civilisation.",
+    "mnemonic": "A mild-mannered man trudging from one royal palace to another offering excellent moral advice, being politely turned away each time, and his students trotting behind him writing everything down.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "persian-empire",
+    "name": "Achaemenid Persian Empire",
+    "house": "Persia / Middle East",
+    "era": "Ancient",
+    "start": -550,
+    "end": -330,
+    "fact": "Cyrus the Great founds the first Persian Empire — the largest the world had yet seen, stretching from the Aegean to the Indus. Cyrus issues the 'Cylinder of Cyrus', often called the first human rights document.",
+    "mnemonic": "A man unrolling an enormous map that keeps falling off both ends of the table, then calmly writing 'you are all free to practice your own religion' on a clay cylinder and handing it to his secretary.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "greek-democracy",
+    "name": "Athenian Democracy Founded",
+    "house": "Greece",
+    "era": "Ancient",
+    "start": -507,
+    "end": null,
+    "fact": "Cleisthenes reforms Athens, creating the first democracy — 'rule by the people'. Fine print: the people means male citizens only, excluding women, slaves (~30% of the population), and foreigners. Still, the idea catches on.",
+    "mnemonic": "A crowd of Athenian men voting enthusiastically by raising their hands, while behind them a rope keeps out the women, slaves, and foreigners, who are watching through a gap in the fence.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "persian-wars",
+    "name": "Greco-Persian Wars",
+    "house": "Greece / Persia",
+    "era": "Ancient",
+    "start": -490,
+    "end": -479,
+    "fact": "The tiny Greek city-states repel the mighty Persian Empire twice — Marathon (490), Thermopylae (480), Salamis (480). The victories create a Greek cultural golden age and a myth of Western civilisation that persists to this day.",
+    "mnemonic": "300 Spartans blocking a narrow pass, looking extremely photogenic in slow motion, while the slightly embarrassed Persian emperor watches 200,000 soldiers fail to get past them.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "golden-age-athens",
+    "name": "Golden Age of Athens",
+    "house": "Greece",
+    "era": "Classical",
+    "start": -480,
+    "end": -404,
+    "fact": "Athens under Pericles builds the Parthenon, funds tragedy and comedy, produces Socrates, Sophocles, and Herodotus, and invents modern political debate. All while running a fairly brutal empire over its 'allies'.",
+    "mnemonic": "Pericles overseeing the Parthenon construction from a platform, while Socrates argues with someone in the street below, a playwright rehearses on a theatre step, and the Athenian navy extracts tribute money in the background.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "alexander-great",
+    "name": "Alexander the Great's Conquests",
+    "house": "Macedonia / Persia / India",
+    "era": "Classical",
+    "start": -334,
+    "end": -323,
+    "fact": "Alexander III of Macedon conquers an empire stretching from Greece to the Punjab in just 13 years, never losing a battle. He dies at 32 in Babylon, probably of typhoid (or possibly alcohol). His empire immediately disintegrates.",
+    "mnemonic": "A slightly-built 20-year-old sprinting across a map of the known world in full armour, capturing city after city, then collapsing dramatically in Babylon aged 32 while his generals stand around arguing who gets what.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "maurya-empire",
+    "name": "Maurya Empire & Ashoka",
+    "house": "India",
+    "era": "Classical",
+    "start": -322,
+    "end": -185,
+    "fact": "Chandragupta Maurya unifies most of the Indian subcontinent. His grandson Ashoka, after a devastating war, converts to Buddhism and erects pillars across his empire proclaiming tolerance, non-violence, and animal welfare. History's first welfare state.",
+    "mnemonic": "A conquering emperor standing on a battlefield, looking down at the carnage, then quietly converting to Buddhism, then building hundreds of stone pillars covered in instructions about not hurting animals.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "roman-republic",
+    "name": "Height of the Roman Republic",
+    "house": "Rome",
+    "era": "Classical",
+    "start": -264,
+    "end": -133,
+    "fact": "Rome defeats Carthage in the Punic Wars (including Hannibal crossing the Alps with elephants) and becomes the Mediterranean's dominant power. The republican system of consuls and Senate provides a template for modern democracy.",
+    "mnemonic": "Hannibal leading a procession of increasingly miserable elephants over a snowy Alpine pass, while a Roman senator in a toga watches from the other side going 'yes, very impressive — now what?'",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "qin-dynasty",
+    "name": "Qin Shi Huang Unifies China",
+    "house": "China",
+    "era": "Classical",
+    "start": -221,
+    "end": -206,
+    "fact": "Ying Zheng conquers the warring states and becomes Qin Shi Huang — First Emperor of China. He standardises weights, measures, writing, and roads. He also begins the Great Wall, buries 8,000 terracotta soldiers, and burns most of the books.",
+    "mnemonic": "A very intense emperor simultaneously standardising every ruler in the empire, building a massive wall, commissioning 8,000 clay soldiers for his afterlife, and hurling books into a bonfire — all before lunch.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "han-dynasty-china",
+    "name": "Han Dynasty — Classical China",
+    "house": "China",
+    "era": "Classical",
+    "start": -206,
+    "end": 220,
+    "fact": "The Han Dynasty lasts 400 years. It gives China its identity: Confucian bureaucracy, paper, seismographs, the civil service exam, and the name 'Han' still used for the majority ethnic group. China's equivalent of Rome.",
+    "mnemonic": "A Chinese civil servant sitting a very long written exam beside a freshly invented piece of paper, while an earthquake detector made of bronze frogs pings outside and he doesn't even look up.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "silk-road-opens",
+    "name": "Silk Road Opens",
+    "house": "China / Central Asia / Rome",
+    "era": "Classical",
+    "start": -130,
+    "end": null,
+    "fact": "Han dynasty China opens trade routes west via Central Asia to Persia and Rome. Silk flows west; glassware and gold flow east. Buddhism, plague, and papermaking also travel the route. The world's first globalisation.",
+    "mnemonic": "A very long camel caravan crossing a desert, trailing silk one way and glass the other, while a monk, a plague rat, and a rolled-up piece of paper hitch a ride in the middle.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "julius-caesar",
+    "name": "Julius Caesar & Fall of the Republic",
+    "house": "Rome",
+    "era": "Classical",
+    "start": -49,
+    "end": -44,
+    "fact": "Caesar crosses the Rubicon in 49 BCE, triggering civil war and ending the Roman Republic. Assassinated on the Ides of March (15 March 44 BCE) by senators fearing tyranny. His heir Octavian completes the job and becomes Augustus.",
+    "mnemonic": "Caesar standing at a river in dramatic pose, toga billowing, then getting stabbed 23 times in the Senate while his senators count loudly and a soothsayer in the corner mutters 'I told him'.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "roman-empire",
+    "name": "Roman Empire — Augustus to Pax Romana",
+    "house": "Rome",
+    "era": "Classical",
+    "start": -27,
+    "end": 180,
+    "fact": "Augustus becomes the first emperor. The Pax Romana — ~200 years of relative peace — sees roads, aqueducts, and Latin law spread from Scotland to Mesopotamia. Jesus is born under Augustus; Paul spreads Christianity under Nero.",
+    "mnemonic": "Augustus in marble pose pointing at a map of Europe covered in straight red lines (roads), while a tiny Jesus is born in a manger in the corner and a nervous Nero tunes his lyre.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "jesus-crucified",
+    "name": "Crucifixion of Jesus of Nazareth",
+    "house": "Judaea / Rome",
+    "era": "Classical",
+    "start": 30,
+    "end": null,
+    "fact": "Jesus of Nazareth, Jewish preacher, is crucified by the Romans under Pontius Pilate c.30 CE. His followers' accounts become the Gospels. The religion that develops from this moment will shape the next 2,000 years of world history.",
+    "mnemonic": "A Roman administrator washing his hands rather pointedly while a crowd argues outside, thoroughly unaware that this regional execution will be the most written-about event in human history.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "vesuvius-pompeii",
+    "name": "Vesuvius Destroys Pompeii",
+    "house": "Roman Empire",
+    "era": "Classical",
+    "start": 79,
+    "end": null,
+    "fact": "Mount Vesuvius erupts in August 79 CE, burying Pompeii and Herculaneum under metres of ash. ~2,000 people die. The city is so perfectly preserved it gives us the most detailed picture of daily Roman life anywhere.",
+    "mnemonic": "A Roman family eating lunch, completely unperturbed, while directly behind them a volcano the size of a small country begins erupting. The dog is chained to the wall. The bread is still in the oven.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "three-kingdoms-china",
+    "name": "Three Kingdoms Period (China)",
+    "house": "China",
+    "era": "Classical",
+    "start": 220,
+    "end": 280,
+    "fact": "China fractures into three warring kingdoms after the Han collapse. One of the most romanticised eras in Chinese history — the subject of 'Romance of the Three Kingdoms', one of the most widely-read novels ever written.",
+    "mnemonic": "Three emperors in a standoff, each refusing to look at the others, while a historian takes frantic notes labelled 'THIS IS GREAT MATERIAL'.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "constantine-christianity",
+    "name": "Constantine Legalises Christianity",
+    "house": "Roman Empire",
+    "era": "Classical",
+    "start": 313,
+    "end": null,
+    "fact": "Emperor Constantine issues the Edict of Milan (313 CE), making Christianity legal in Rome. He later converts himself. The persecuted minority sect becomes, within a generation, the official religion of the world's greatest empire.",
+    "mnemonic": "Constantine looking at the sun, seeing a cross, and immediately having his legions paint crosses on all their shields — then watching confused bishops try to figure out what just happened to their small underground religion.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "gupta-india",
+    "name": "Gupta Empire — Golden Age of India",
+    "house": "India",
+    "era": "Classical",
+    "start": 320,
+    "end": 550,
+    "fact": "The Gupta Empire oversees India's classical golden age: Sanskrit literature, Kalidasa's plays, the decimal number system (including zero), and advances in astronomy and medicine. Zero will change the world.",
+    "mnemonic": "An Indian mathematician staring at a blank space on a clay tablet going 'what if that absence of value were itself a number?' — while poets, astronomers, and doctors argue loudly in the corridors behind him.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "fall-of-rome",
+    "name": "Fall of the Western Roman Empire",
+    "house": "Rome / Germanic Europe",
+    "era": "Classical",
+    "start": 410,
+    "end": 476,
+    "fact": "Rome is sacked by the Visigoths in 410 (the psychological shock) and the last Western emperor is deposed in 476. The East (Byzantium) survives for another 1,000 years. The 'Fall' is actually a slow transformation lasting centuries.",
+    "mnemonic": "The last Western emperor handing over his crown to a German warlord like handing over house keys to a new tenant — the warlord doesn't want the empire title, just the house — while the Eastern emperor waves cheerfully from Constantinople.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "justinian-byzantine",
+    "name": "Justinian I & Byzantine Florescence",
+    "house": "Byzantine Empire",
+    "era": "Post-Classical",
+    "start": 527,
+    "end": 565,
+    "fact": "Byzantine Emperor Justinian briefly reconquers North Africa and Italy, codifies Roman law (still the basis of most European legal systems), and builds the Hagia Sophia. His wife Theodora, former actress, is his indispensable co-ruler.",
+    "mnemonic": "Justinian signing a law code with one hand while his wife Theodora runs the empire with the other — behind them, workers are building the most extraordinary dome anyone has ever seen.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "muhammad-islam",
+    "name": "Muhammad & the Birth of Islam",
+    "house": "Arabia",
+    "era": "Post-Classical",
+    "start": 610,
+    "end": 632,
+    "fact": "Muhammad receives his first revelation in a cave near Mecca c.610 CE. By his death in 632, he has unified the Arabian peninsula. Within 100 years, Islam will have reached Spain in the West and Central Asia in the East.",
+    "mnemonic": "A merchant in a cave outside Mecca receiving a message, then emerging and spending the next 22 years persuading, debating, and eventually militarily unifying one of the most fractious regions on Earth.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "tang-dynasty",
+    "name": "Tang Dynasty — Golden Age of China",
+    "house": "China",
+    "era": "Post-Classical",
+    "start": 618,
+    "end": 907,
+    "fact": "The Tang Dynasty is China's golden age: the world's largest and most cosmopolitan city (Chang'an, pop. 1 million), poetry, porcelain, woodblock printing, and the first gunpowder recipes. Buddhism, silk, and ideas flow in all directions.",
+    "mnemonic": "A Tang-era poet composing at a desk in a city of one million people, surrounded by Persian merchants, Korean monks, Japanese students, and a man accidentally setting off a small firework while testing his new invention.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "arab-conquests",
+    "name": "Arab Conquests — Islamic Expansion",
+    "house": "Middle East / North Africa / Persia",
+    "era": "Post-Classical",
+    "start": 632,
+    "end": 750,
+    "fact": "Arab Muslim armies, energised by a new faith, conquer Persia, Egypt, the Levant, North Africa, and Spain within a century. The Byzantine and Persian empires, exhausted by decades of war with each other, barely resist. History's fastest empire expansion.",
+    "mnemonic": "An exhausted Persian soldier and an exhausted Byzantine soldier leaning on each other for support, both turning to find an Arab army moving at extraordinary speed in their direction — and neither has the energy to object.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "abbasid-caliphate",
+    "name": "Abbasid Caliphate & House of Wisdom",
+    "house": "Baghdad / Islamic World",
+    "era": "Post-Classical",
+    "start": 762,
+    "end": 1258,
+    "fact": "Baghdad becomes the world's greatest city under the Abbasids. The House of Wisdom translates Greek, Indian, and Persian knowledge into Arabic, preserving and advancing mathematics, astronomy, medicine, and philosophy.",
+    "mnemonic": "A Baghdad librarian surrounded by towering stacks of translated books — Greek philosophy, Indian mathematics, Persian astronomy — furiously cross-referencing and adding annotations, while outside, the One Thousand and One Nights are being told.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "viking-age",
+    "name": "Viking Age",
+    "house": "Scandinavia / Europe / Atlantic",
+    "era": "Post-Classical",
+    "start": 793,
+    "end": 1066,
+    "fact": "The sack of Lindisfarne (793) marks the Viking Age. Norse raiders and traders reach every corner of Europe, colonise Iceland and Greenland, and reach North America 500 years before Columbus. They also found Russia.",
+    "mnemonic": "A longship crammed with Norsemen rowing with one hand and navigating with the other, raiding a monastery on the left, founding a city on the right, and somehow ending up in Newfoundland before they realise they've overshot.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "charlemagne",
+    "name": "Charlemagne Crowned Holy Roman Emperor",
+    "house": "Frankish Empire / Europe",
+    "era": "Post-Classical",
+    "start": 800,
+    "end": null,
+    "fact": "On Christmas Day 800, Charlemagne is crowned Emperor of the Romans by the Pope in a ceremony that surprises him (he reportedly disliked it). He unites most of Western Europe for the first time since Rome, founding what will become France and Germany.",
+    "mnemonic": "A very large Frankish warlord looking genuinely annoyed as the Pope plonks a crown on his head without asking, in front of the entire Roman church — then realising the crowd is cheering and awkwardly deciding to keep it.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "maya-classic-collapse",
+    "name": "Maya Classic Period Collapse",
+    "house": "Mesoamerica",
+    "era": "Post-Classical",
+    "start": 800,
+    "end": 900,
+    "fact": "The great Maya lowland cities — Tikal, Palenque, Copán — are mysteriously abandoned within a century. Likely a combination of prolonged drought, warfare, soil depletion, and political collapse. Millions of people scatter north and south.",
+    "mnemonic": "An entire city of elaborate stone pyramids suddenly empty, with dinner still on the tables, while archaeologists 1,000 years later stare at the ruins saying 'but WHY did they leave?'",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "song-dynasty-china",
+    "name": "Song Dynasty — Medieval China",
+    "house": "China",
+    "era": "Post-Classical",
+    "start": 960,
+    "end": 1279,
+    "fact": "The Song Dynasty invents paper money, moveable type printing, the mechanical clock, the compass, and advanced blast furnaces. China in 1100 CE is technically and economically centuries ahead of Europe.",
+    "mnemonic": "A Song-era inventor sitting on a pile of paper money, compass in hand, watching his newly printed book come off a moveable-type press, as a clock ticks on the wall and the Iron Works smoke in the distance.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "crusades",
+    "name": "First Crusade & Jerusalem Captured",
+    "house": "Europe / Middle East",
+    "era": "Post-Classical",
+    "start": 1095,
+    "end": 1099,
+    "fact": "Pope Urban II calls the First Crusade. An extraordinary mix of knights, peasants, and opportunists marches to the Holy Land and captures Jerusalem in 1099. Thousands of Muslim and Jewish inhabitants are massacred. The Crusades last 200 years.",
+    "mnemonic": "An enormous, chaotic procession of knights, peasants, priests, and lost pilgrims crossing Europe and Anatolia, arguing the whole way, arriving at Jerusalem exhausted and immediately doing something everyone will be apologising for later.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "genghis-khan",
+    "name": "Mongol Conquests — Genghis Khan",
+    "house": "Central Asia / Eurasia",
+    "era": "Post-Classical",
+    "start": 1206,
+    "end": 1368,
+    "fact": "Genghis Khan unites the Mongol tribes and launches the largest contiguous land empire in history. His successors destroy Baghdad (1258), invade Poland, and establish the Yuan dynasty in China. Perhaps 40 million people die.",
+    "mnemonic": "A figure on horseback unrolling a map of Eurasia and calmly connecting every city on it with a line marked 'invaded' — while historians argue about whether the roads and trade networks that follow are worth the catastrophe.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "magna-carta",
+    "name": "Magna Carta",
+    "house": "England",
+    "era": "Post-Classical",
+    "start": 1215,
+    "end": null,
+    "fact": "English barons force King John to sign Magna Carta at Runnymede — the first document limiting royal power in law. Most of it is about feudal rights for barons; one clause about habeas corpus will become the cornerstone of modern liberty.",
+    "mnemonic": "King John at a riverside meadow, surrounded by furious barons in armour, being handed a quill, looking at a document he has not read, and signing it with the expression of a man who will definitely be getting revenge later.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "mali-empire",
+    "name": "Mali Empire & Mansa Musa's Pilgrimage",
+    "house": "West Africa",
+    "era": "Post-Classical",
+    "start": 1312,
+    "end": 1337,
+    "fact": "Mansa Musa of Mali is the richest person in history by most estimates. His 1324 pilgrimage to Mecca — 60,000 people, hundreds of camels carrying gold — was so lavish it caused inflation in Egypt for a decade.",
+    "mnemonic": "A man crossing the Sahara with 60,000 attendants and so much gold that every market he passes through is still recovering ten years later, while Egyptian merchants weep into their devalued coin purses.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "hundred-years-war",
+    "name": "Hundred Years' War & Joan of Arc",
+    "house": "England / France",
+    "era": "Post-Classical",
+    "start": 1337,
+    "end": 1453,
+    "fact": "England and France fight intermittently for 116 years over the French throne. Joan of Arc — a 17-year-old peasant girl with visions — turns the war around for France before being burned at the stake. France eventually wins.",
+    "mnemonic": "A teenage girl in armour leading battle-hardened French knights, having convinced them God told her to do it — followed by her capture, trial, and burning by the people she just saved Europe from.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "black-death",
+    "name": "Black Death Reaches Europe",
+    "house": "Europe / Middle East",
+    "era": "Post-Classical",
+    "start": 1347,
+    "end": 1353,
+    "fact": "The bubonic plague arrives in Sicily from Crimea in 1347. Within six years it kills 30–60% of Europe's population — perhaps 25 million people. It ends serfdom, transforms the labour market, and triggers a spiritual crisis in Christianity.",
+    "mnemonic": "A Genoese merchant ship pulling into a European harbour while everyone on the dock waves cheerfully — then everyone on the dock is dead by Tuesday.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "renaissance-italy",
+    "name": "Italian Renaissance",
+    "house": "Italy",
+    "era": "Early Modern",
+    "start": 1400,
+    "end": 1600,
+    "fact": "Florence, Venice, and Rome become the centre of a cultural explosion: Brunelleschi's dome, Donatello's sculpture, Botticelli, Leonardo, Michelangelo, Machiavelli. Funded largely by the Medici banking dynasty, who want paintings of themselves.",
+    "mnemonic": "The Medici banker commissioning a famous painting, secretly hoping to appear in it in flattering light, while Leonardo da Vinci scribbles flying machines in the margins of the contract.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "printing-press",
+    "name": "Gutenberg's Printing Press",
+    "house": "Europe (Germany)",
+    "era": "Early Modern",
+    "start": 1450,
+    "end": null,
+    "fact": "Johannes Gutenberg's moveable-type press in Mainz makes the mass reproduction of text possible. Within 50 years, 8 million books are in circulation. The Reformation, the Scientific Revolution, and the Enlightenment all follow directly.",
+    "mnemonic": "Gutenberg pulling the first printed Bible off his press, looking extremely pleased — then watching as 50 years later pamphlets critical of the Church are flying out of windows across Europe and he realises what he's started.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "fall-of-constantinople",
+    "name": "Fall of Constantinople",
+    "house": "Byzantine Empire / Ottoman Empire",
+    "era": "Early Modern",
+    "start": 1453,
+    "end": null,
+    "fact": "Ottoman Sultan Mehmed II captures Constantinople with the world's largest cannons, ending the Byzantine Empire after 1,000 years. The date is often given as the end of the Middle Ages. Greek scholars flee west, seeding the Renaissance.",
+    "mnemonic": "The world's largest cannons blasting holes in walls that had stood for 1,000 years — Greek scholars inside grabbing armfuls of manuscripts and sprinting for the nearest ship to Italy.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "columbus-americas",
+    "name": "Columbus Reaches the Americas",
+    "house": "Spain / Caribbean",
+    "era": "Early Modern",
+    "start": 1492,
+    "end": null,
+    "fact": "Columbus reaches the Bahamas on 12 October 1492, believing he has found Asia. He hasn't. Within 50 years, European diseases will kill ~90% of the indigenous American population. The world is permanently, catastrophically connected.",
+    "mnemonic": "Columbus planting a Spanish flag on a Caribbean beach, insisting to his crew 'this is definitely India' — while behind him, the Americas stretch for 14,000 miles and someone with a map of Asia sighs loudly.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "reformation",
+    "name": "Protestant Reformation",
+    "house": "Europe",
+    "era": "Early Modern",
+    "start": 1517,
+    "end": null,
+    "fact": "Martin Luther nails (or perhaps letters) his 95 Theses to a Wittenberg church door in 1517. The printing press spreads his ideas at unstoppable speed. Christianity permanently fractures; wars, revolutions, and modern individualism follow.",
+    "mnemonic": "Martin Luther hammering a document to a church door while a printing press in the background fires off copies at terrifying speed — and in Rome, a Pope receives one and says 'oh no'.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "aztec-inca-conquest",
+    "name": "Spanish Conquest of Aztec & Inca Empires",
+    "house": "Mesoamerica / South America",
+    "era": "Early Modern",
+    "start": 1519,
+    "end": 1572,
+    "fact": "Hernán Cortés (600 men) conquers the Aztec Empire (5–10 million people) in two years; Francisco Pizarro does the same to the Inca. Disease does most of the work. The silver of the Americas funds the modern global economy.",
+    "mnemonic": "600 extremely nervous conquistadors in tin hats standing at the gates of Tenochtitlan, a city larger than any in Europe, then realising that smallpox has arrived ahead of them and done most of the work.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "ottoman-peak",
+    "name": "Ottoman Empire at its Peak",
+    "house": "Ottoman Empire",
+    "era": "Early Modern",
+    "start": 1520,
+    "end": 1566,
+    "fact": "Suleiman the Magnificent rules the Ottoman Empire at its peak — stretching from Vienna to Yemen, Algiers to Baghdad. Law codes, architectural masterpieces, and control of all land trade between Europe and Asia. His coffee shops are better too.",
+    "mnemonic": "Suleiman in full regalia sitting at the crossroads of Europe, Asia, and Africa, collecting tolls from everyone going in every direction, while his architect Sinan builds a mosque that makes every other building look embarrassed.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "mughal-empire",
+    "name": "Mughal Empire Established",
+    "house": "South Asia",
+    "era": "Early Modern",
+    "start": 1526,
+    "end": 1707,
+    "fact": "Babur founds the Mughal Empire, unifying most of the Indian subcontinent. Under Akbar it reaches its tolerant, administratively brilliant peak. Shah Jahan builds the Taj Mahal as a tomb for his wife. The empire produces perhaps 25% of world GDP.",
+    "mnemonic": "An emperor weeping at his wife's grave, then channelling his grief into the most beautiful building in the world — while his accountants tally up 25% of the entire world's income and look nervous about where it's all going.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "copernicus-heliocentric",
+    "name": "Copernicus — Heliocentric Model",
+    "house": "Europe (Poland)",
+    "era": "Early Modern",
+    "start": 1543,
+    "end": null,
+    "fact": "Copernicus publishes 'De Revolutionibus' on his deathbed, arguing the Earth orbits the Sun. The Church is displeased. His idea, developed by Kepler and Galileo, launches the Scientific Revolution and relocates humanity from the centre of everything.",
+    "mnemonic": "Copernicus on his deathbed, handing a book to his publisher saying 'publish this when I'm dead' — then looking up at the ceiling and quietly rearranging the planets in his head.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "galileo",
+    "name": "Galileo's Telescope & Trial",
+    "house": "Italy / Europe",
+    "era": "Early Modern",
+    "start": 1609,
+    "end": 1633,
+    "fact": "Galileo points a telescope at the sky (1609), sees moons orbiting Jupiter, and confirms Copernicus. In 1633 the Inquisition forces him to recant. He allegedly mutters 'and yet it moves'. The Church is wrong; he is right; and everyone knows it.",
+    "mnemonic": "Galileo pointing his telescope at Jupiter, writing down what he sees with shaking hands, then being hauled before a tribunal and told the moons he saw don't exist — then going home and writing it all down again.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "thirty-years-war",
+    "name": "Thirty Years' War & Westphalia",
+    "house": "Europe",
+    "era": "Early Modern",
+    "start": 1618,
+    "end": 1648,
+    "fact": "Europe's most destructive religious war kills ~8 million in Germany alone. The Peace of Westphalia (1648) ends it and invents the modern concept of sovereign nation-states with non-interference in internal affairs. International relations as we know them begin here.",
+    "mnemonic": "European diplomats signing a peace treaty in Westphalia, exhausted and covered in metaphorical dust, simultaneously inventing the modern nation-state system because they have literally run out of other ideas.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "english-civil-war",
+    "name": "English Civil War & Execution of Charles I",
+    "house": "England",
+    "era": "Early Modern",
+    "start": 1642,
+    "end": 1651,
+    "fact": "Parliament fights King Charles I, executes him in 1649 — the first time a ruling monarch is tried and publicly killed by his own subjects. Cromwell briefly rules as a Puritan dictator. The idea that no one is above the law becomes thinkable.",
+    "mnemonic": "Charles I standing on a scaffold outside his own palace, looking genuinely surprised, while Parliament cheers and a very serious man in a hat takes careful legal notes on the unprecedented nature of the occasion.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "great-fire-london",
+    "name": "Great Fire of London",
+    "house": "England",
+    "era": "Early Modern",
+    "start": 1666,
+    "end": null,
+    "fact": "A bakery fire in Pudding Lane burns for four days, destroying 13,000 houses and 87 churches — but killing fewer than 10 people. It accidentally clears the plague and gives Wren the chance to redesign the city. St Paul's Cathedral is the result.",
+    "mnemonic": "A baker in Pudding Lane forgetting to put out his oven, then watching as 13,000 buildings turn into a spectacular urban planning opportunity — Christopher Wren already sprinting towards it with blueprints.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "newton-principia",
+    "name": "Newton's Principia — Laws of Motion",
+    "house": "England / Europe",
+    "era": "Early Modern",
+    "start": 1687,
+    "end": null,
+    "fact": "Isaac Newton publishes the Principia Mathematica in 1687, setting out the laws of motion and universal gravitation. He essentially invents calculus to do it. The universe becomes, for the first time, mathematically predictable.",
+    "mnemonic": "Newton sitting under a tree, getting hit on the head with an apple, then going inside and writing three volumes of dense mathematics that make the fall of every apple forever explainable — and inventing calculus because the maths he needs doesn't exist yet.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "glorious-revolution",
+    "name": "Glorious Revolution",
+    "house": "England / Netherlands",
+    "era": "Early Modern",
+    "start": 1688,
+    "end": null,
+    "fact": "The Dutch king William III invades England by invitation, James II flees without a fight, and Parliament establishes constitutional monarchy. The English Bill of Rights (1689) permanently limits royal power. The revolution is considered 'glorious' because almost no one dies.",
+    "mnemonic": "William of Orange landing in England to find the entire country holding the door open and James II already sneaking out of the back window — then Parliament handing William a bill of rights to sign before he sits down.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "slave-trade-peak",
+    "name": "Atlantic Slave Trade — Peak",
+    "house": "Atlantic World",
+    "era": "Early Modern",
+    "start": 1700,
+    "end": 1808,
+    "fact": "The 18th century sees the peak of the transatlantic slave trade — ~6 million Africans forcibly transported to the Americas in this century alone, ~12 million total. It funds the Industrial Revolution and shapes the Americas, Europe, and Africa for centuries.",
+    "mnemonic": "A balance scale with cotton, sugar, and silver on one side, and 12 million human lives on the other — while industrialists in Bristol and Liverpool count their profits and look away from the second pan.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "industrial-revolution",
+    "name": "Industrial Revolution Begins",
+    "house": "Britain / Europe",
+    "era": "Modern",
+    "start": 1760,
+    "end": 1840,
+    "fact": "Britain's coal, canals, and cotton mills launch the Industrial Revolution. Watt's steam engine (1769) transforms manufacturing. Within 80 years, machines do what humans and animals could not. Also: child labour, pollution, and slums.",
+    "mnemonic": "James Watt watching a kettle lid rattle, then in the next scene the entire landscape of England is covered in factory chimneys, rail lines, and children working looms — all in the time it takes to drink the tea.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "american-revolution",
+    "name": "American Revolution & Declaration of Independence",
+    "house": "North America",
+    "era": "Early Modern",
+    "start": 1776,
+    "end": 1783,
+    "fact": "Thirteen British colonies declare independence in 1776, citing Enlightenment principles of natural rights. France backs them; Britain loses. The US Constitution becomes the template for modern republics worldwide.",
+    "mnemonic": "A group of colonists standing around a table angrily writing 'all men are created equal' — while owning several hundred thousand enslaved people — and posting the result to King George, who crumples it and throws it at a wall.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "french-revolution",
+    "name": "French Revolution",
+    "house": "France",
+    "era": "Early Modern",
+    "start": 1789,
+    "end": 1799,
+    "fact": "France's absolute monarchy collapses under debt, famine, and Enlightenment ideas. Liberty, equality, fraternity — and the guillotine — are all invented. 40,000 are executed during the Terror. Napoleon follows.",
+    "mnemonic": "The Estates-General called to discuss the debt crisis, then the storming of a largely empty prison, then the guillotine working overtime, then everyone looking around going 'this is not quite what we planned' — then Napoleon arriving.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "haitian-revolution",
+    "name": "Haitian Revolution",
+    "house": "Caribbean (Haiti)",
+    "era": "Modern",
+    "start": 1791,
+    "end": 1804,
+    "fact": "The only successful slave revolution in history: enslaved people in Saint-Domingue defeat Napoleon's army and found Haiti in 1804. Napoleon then sells Louisiana to the US. The reverberations reshape the Americas.",
+    "mnemonic": "Toussaint Louverture leading an army of enslaved people that defeats Napoleon's finest troops — then Napoleon, thoroughly rattled, selling half of North America to the Americans in a fire sale.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "napoleon",
+    "name": "Napoleonic Era",
+    "house": "France / Europe",
+    "era": "Modern",
+    "start": 1799,
+    "end": 1815,
+    "fact": "Napoleon Bonaparte crowns himself Emperor, reforms French law (the Code Napoléon still underlies French-derived legal systems), conquers most of Europe, invades Russia, loses, and is exiled twice. All in 16 years.",
+    "mnemonic": "A short general crowning himself at top speed in Notre Dame, re-drawing the map of Europe, then leading a million soldiers into Russian winter with an expression of mounting regret, before being exiled to a small island.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "latin-american-independence",
+    "name": "Latin American Independence Movements",
+    "house": "South / Central America",
+    "era": "Modern",
+    "start": 1808,
+    "end": 1826,
+    "fact": "Napoleon's invasion of Spain triggers independence movements across Latin America. Simón Bolívar and José de San Martín liberate most of South America by 1826. 18 new nations emerge in under 20 years.",
+    "mnemonic": "Napoleon invading Spain, accidentally knocking over 18 colonies on the other side of the Atlantic like dominoes — each one standing up and declaring independence before the dust settles.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "darwin-evolution",
+    "name": "Darwin Publishes On the Origin of Species",
+    "house": "Britain / Global",
+    "era": "Modern",
+    "start": 1859,
+    "end": null,
+    "fact": "Charles Darwin publishes On the Origin of Species in 1859, having sat on the idea for 20 years for fear of the reaction. Natural selection by survival of the fittest. Biology, theology, and humanity's understanding of itself are permanently altered.",
+    "mnemonic": "Darwin nervously sliding a book across a table labelled 'all life on Earth shares a common ancestor', then watching half the room cheer and half the room faint — the clergy doing both simultaneously.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "american-civil-war",
+    "name": "American Civil War & Abolition",
+    "house": "United States",
+    "era": "Modern",
+    "start": 1861,
+    "end": 1865,
+    "fact": "The US Civil War — 620,000 dead — ends with abolition of slavery. The 13th Amendment passes in 1865. Lincoln is assassinated days after the Southern surrender. Reconstruction begins, then largely fails.",
+    "mnemonic": "The most mechanised, industrialised war the world has yet seen, fought partly over a moral question that has a clear answer — then, upon winning, the victor is shot in a theatre five days later.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "meiji-restoration",
+    "name": "Meiji Restoration — Japan Modernises",
+    "house": "Japan",
+    "era": "Modern",
+    "start": 1868,
+    "end": 1912,
+    "fact": "After US gunboats force Japan open in 1853, the Meiji Restoration transforms Japan in 40 years: western science, railways, steel, a modern army. Japan goes from feudal isolation to defeating Russia (1905) in a generation.",
+    "mnemonic": "Japanese officials in traditional robes staring at an American warship, then one year later wearing three-piece suits, building railways, and sending students to Germany — then defeating Russia and absolutely astonishing everyone.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "berlin-conference",
+    "name": "Scramble for Africa — Berlin Conference",
+    "house": "Europe / Africa",
+    "era": "Modern",
+    "start": 1884,
+    "end": 1885,
+    "fact": "European powers divide Africa between themselves at the Berlin Conference (1884–5). No Africans are present. Within 30 years, 90% of Africa is under European colonial control. The borders drawn here still cause conflict today.",
+    "mnemonic": "European leaders sitting around a map of Africa with rulers and pencils, drawing straight lines across it — not one African in the room — while looking extremely pleased with themselves.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "world-war-one",
+    "name": "First World War",
+    "house": "Europe / Global",
+    "era": "Modern",
+    "start": 1914,
+    "end": 1918,
+    "fact": "An assassination in Sarajevo triggers a series of alliance obligations and miscalculations that plunge Europe into four years of industrial slaughter — 17 million dead. Four empires collapse: Ottoman, Austro-Hungarian, Russian, German.",
+    "mnemonic": "A row of dominoes labelled 'alliance obligations' tipping from a single gunshot in Sarajevo, each one crushing millions of men in muddy trenches before four enormous empires at the end all fall over at once.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "russian-revolution",
+    "name": "Russian Revolution",
+    "house": "Russia",
+    "era": "Modern",
+    "start": 1917,
+    "end": null,
+    "fact": "Two revolutions in 1917: the Tsar abdicates in February; the Bolsheviks seize power in October. Lenin establishes the first communist state. The USSR will shape world history for 70 years and kill tens of millions of its own citizens.",
+    "mnemonic": "The Tsar abdicating in February looking relieved, then in October a group of men in long coats seizing a telegraph office and announcing that everything is now different — and meaning it.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "spanish-flu",
+    "name": "Spanish Flu Pandemic",
+    "house": "Global",
+    "era": "Modern",
+    "start": 1918,
+    "end": 1920,
+    "fact": "The 1918 influenza pandemic infects ~500 million people — one-third of humanity — and kills 50–100 million. It kills more people than WWI. Unlike typical flu, it targets healthy young adults. Still the deadliest pandemic in recorded history.",
+    "mnemonic": "The guns of WWI falling silent in November 1918 — then everyone looking around and realising a far smaller, invisible thing has been killing more people than the war the whole time.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "roaring-twenties-crash",
+    "name": "Wall Street Crash & Great Depression",
+    "house": "USA / Global",
+    "era": "Modern",
+    "start": 1929,
+    "end": 1939,
+    "fact": "The Wall Street Crash of October 1929 triggers the Great Depression — 25% US unemployment, global bank failures, mass poverty. It empowers fascism in Europe, prolongs misery everywhere, and ends only with WWII military spending.",
+    "mnemonic": "Ticker tape falling on Wall Street — then actually falling, covering everything, including the brokers leaping from windows. Then ten years of breadlines.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "world-war-two",
+    "name": "Second World War",
+    "house": "Global",
+    "era": "Modern",
+    "start": 1939,
+    "end": 1945,
+    "fact": "The deadliest conflict in human history: ~70–85 million dead, including 6 million Jews in the Holocaust. Ends with atomic bombs over Hiroshima and Nagasaki, the founding of the UN, and the beginning of the Cold War — all simultaneously.",
+    "mnemonic": "The world on fire from 1939 to 1945, ending with two new suns appearing over Japan — and then everyone in the ruins agreeing to write down some rules so it never happens again.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "holocaust",
+    "name": "The Holocaust",
+    "house": "Nazi Germany / Europe",
+    "era": "Modern",
+    "start": 1941,
+    "end": 1945,
+    "fact": "The systematic murder of six million Jews, and millions of Roma, disabled people, homosexuals, and political opponents by Nazi Germany — industrial genocide using railways, camps, and bureaucracy. The defining atrocity of modern history.",
+    "mnemonic": "The bureaucratic machinery of a modern state — trains, ledgers, uniforms, paperwork — turned entirely toward the systematic murder of civilians. The horror is in the organisation.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "un-founded",
+    "name": "United Nations Founded",
+    "house": "Global",
+    "era": "Modern",
+    "start": 1945,
+    "end": null,
+    "fact": "The UN is founded in San Francisco in 1945 by 50 nations, replacing the failed League of Nations. The Universal Declaration of Human Rights follows in 1948. The institution is flawed, slow, and indispensable.",
+    "mnemonic": "50 nations' representatives in San Francisco, all signing the same document and agreeing — while privately planning to ignore it whenever convenient — then Eleanor Roosevelt drafting the human rights declaration in the corner.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "indian-independence",
+    "name": "Indian Independence & Partition",
+    "house": "South Asia",
+    "era": "Modern",
+    "start": 1947,
+    "end": null,
+    "fact": "Britain withdraws from India in 1947, creating India and Pakistan. Partition triggers one of the largest mass migrations in history (~15 million) and communal violence killing ~1–2 million. Nehru's midnight speech: 'a tryst with destiny'.",
+    "mnemonic": "A line being drawn across a map of the subcontinent at midnight, while 15 million people on both sides of the line simultaneously start moving in opposite directions, carrying everything they own.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "cold-war",
+    "name": "Cold War Begins",
+    "house": "USA / USSR / Global",
+    "era": "Modern",
+    "start": 1947,
+    "end": 1991,
+    "fact": "The US and USSR never fight directly but proxy wars, nuclear brinkmanship, and ideological competition define global politics for 45 years. Korea, Vietnam, Cuba, Afghanistan — the Cold War kills millions while the main antagonists never shoot each other.",
+    "mnemonic": "Two enormous men in boxing gloves — one with a stars-and-stripes top hat, one in a fur hat — circling each other for 45 years, occasionally punching small countries in the face while maintaining eye contact with each other.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "decolonisation",
+    "name": "Decolonisation of Africa & Asia",
+    "house": "Africa / Asia",
+    "era": "Modern",
+    "start": 1947,
+    "end": 1980,
+    "fact": "The British, French, Dutch, and Belgian empires dissolve within 35 years of WWII. Dozens of new nations emerge, many with borders drawn by former colonisers. The transition is sometimes peaceful, often violent, always complicated.",
+    "mnemonic": "A series of flags being replaced on map after map — Union Jacks, Tricolours, and Tricolours being taken down, local flags going up — while diplomats argue about the borders their predecessors drew with rulers.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "mao-china",
+    "name": "People's Republic of China Founded",
+    "house": "China",
+    "era": "Modern",
+    "start": 1949,
+    "end": null,
+    "fact": "Mao Zedong proclaims the PRC in Beijing on 1 October 1949, ending the civil war. His subsequent campaigns — the Great Leap Forward, Cultural Revolution — kill tens of millions. He also unifies and modernises China. The contradictions remain unresolved.",
+    "mnemonic": "Mao in Tiananmen Square proclaiming China 'has stood up' — then in the background, the Great Leap Forward and Cultural Revolution happening simultaneously like very large, dark cloud formations.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "dna-discovery",
+    "name": "Discovery of DNA Structure",
+    "house": "Britain / Global",
+    "era": "Modern",
+    "start": 1953,
+    "end": null,
+    "fact": "Watson, Crick, and (critically) Rosalind Franklin work out the double helix structure of DNA in 1953. The code of life is deciphered. Franklin's crucial X-ray data is used without her knowledge or credit. She dies four years before the Nobel Prize is awarded.",
+    "mnemonic": "Watson and Crick running down a Cambridge street shouting 'we've found the secret of life!' — while in a lab nearby, Rosalind Franklin stares at her X-ray photograph, unaware they've just used it.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "vietnam-war",
+    "name": "Vietnam War",
+    "house": "Vietnam / USA",
+    "era": "Modern",
+    "start": 1955,
+    "end": 1975,
+    "fact": "The US spends 20 years and 58,000 American lives trying to prevent a communist Vietnam. It fails. 3 million Vietnamese die. The war transforms American politics, media, and self-image. The last US helicopter leaves Saigon's rooftop in April 1975.",
+    "mnemonic": "A helicopter on a Saigon rooftop in 1975, last people scrambling aboard, the city falling behind it — the image that defined what a superpower losing a war looks like.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "civil-rights-usa",
+    "name": "US Civil Rights Movement",
+    "house": "United States",
+    "era": "Modern",
+    "start": 1955,
+    "end": 1968,
+    "fact": "Rosa Parks, Martin Luther King, Freedom Riders, Selma — the Civil Rights Movement forces the Civil Rights Act (1964) and Voting Rights Act (1965), legally ending segregation. King is assassinated in April 1968.",
+    "mnemonic": "A woman refusing to move to the back of a bus in 1955, setting in motion marches, firehoses, a speech about a dream, and — eventually — the law, before the man who articulated that dream is shot.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "space-race",
+    "name": "Space Race — Sputnik to Moon Landing",
+    "house": "USSR / USA",
+    "era": "Modern",
+    "start": 1957,
+    "end": 1969,
+    "fact": "Sputnik (1957) panics the West. Yuri Gagarin becomes the first human in space (1961). Neil Armstrong walks on the Moon (1969). Humanity leaves its planet for the first time in its 3-million-year history. Apollo 11 is watched live by 600 million people.",
+    "mnemonic": "A small beeping ball orbiting Earth in 1957, causing the entire United States to pour money into science — then 12 years later Neil Armstrong placing a boot on the lunar surface and 600 million people holding their breath.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "cuban-missile-crisis",
+    "name": "Cuban Missile Crisis",
+    "house": "USA / USSR / Cuba",
+    "era": "Modern",
+    "start": 1962,
+    "end": null,
+    "fact": "Thirteen days in October 1962 when the US and USSR come closest to nuclear war over Soviet missiles in Cuba. Kennedy and Khrushchev back down simultaneously. A direct hotline is installed between Washington and Moscow the next year.",
+    "mnemonic": "Kennedy and Khrushchev in a staring contest across a desk covered in nuclear launch codes for 13 days, while everyone else on Earth holds their breath — then both men blink at exactly the same moment.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "cultural-revolution-china",
+    "name": "Cultural Revolution",
+    "house": "China",
+    "era": "Modern",
+    "start": 1966,
+    "end": 1976,
+    "fact": "Mao launches the Cultural Revolution: Red Guards destroy temples, books, and 'bourgeois' culture; intellectuals are sent to labour camps; teachers are beaten by students. ~500,000 to 2 million die. China's entire educated class is disrupted for a decade.",
+    "mnemonic": "Students waving little red books while burning libraries, as professors are paraded through the streets in dunce hats — and China's entire intellectual life pauses, mid-sentence, for ten years.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "iranian-revolution",
+    "name": "Iranian Revolution",
+    "house": "Iran / Middle East",
+    "era": "Modern",
+    "start": 1979,
+    "end": null,
+    "fact": "Ayatollah Khomeini leads an Islamic revolution, toppling the Shah. The first modern Islamic republic is established. The fallout — hostage crisis, Iran-Iraq War, regional tensions — reshapes Middle East geopolitics for decades.",
+    "mnemonic": "A Shah in sunglasses fleeing a country, while an elderly cleric in black returns from Paris exile on a plane watched by millions — the country transforming almost overnight into something entirely different.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "fall-berlin-wall",
+    "name": "Fall of the Berlin Wall & End of Cold War",
+    "house": "Germany / Europe",
+    "era": "Modern",
+    "start": 1989,
+    "end": 1991,
+    "fact": "The Berlin Wall falls on 9 November 1989 after a bureaucratic blunder at a press conference. The USSR dissolves in 1991. The Cold War ends not with a bang but with a confused announcement about border crossings being open.",
+    "mnemonic": "A Communist official at a press conference accidentally announcing that the Berlin Wall is open 'immediately and without conditions' — then watching a million people show up with hammers before anyone can issue a correction.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "tiananmen",
+    "name": "Tiananmen Square Massacre",
+    "house": "China",
+    "era": "Modern",
+    "start": 1989,
+    "end": null,
+    "fact": "Student pro-democracy protests in Tiananmen Square are crushed by the Chinese army on 4 June 1989. Hundreds to thousands die. The iconic 'Tank Man' photograph is taken. China's political direction is set — economic liberalisation without democracy.",
+    "mnemonic": "One man with shopping bags stepping in front of a column of tanks — the image seen everywhere except in China, where it has been scrubbed from the internet and the memory of a generation.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "end-apartheid",
+    "name": "End of Apartheid — Mandela Elected",
+    "house": "South Africa",
+    "era": "Modern",
+    "start": 1990,
+    "end": 1994,
+    "fact": "Nelson Mandela walks free after 27 years in prison in 1990. South Africa's first democratic elections are held in 1994; Mandela becomes president. The peaceful transition is considered almost miraculous given the tensions involved.",
+    "mnemonic": "A man walking out of prison gates at 71, raising his fist, after 27 years — then four years later voting in his country's first democratic election with the rest of the country, and winning.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "world-wide-web",
+    "name": "World Wide Web Invented",
+    "house": "Global",
+    "era": "Modern",
+    "start": 1991,
+    "end": null,
+    "fact": "Tim Berners-Lee invents the World Wide Web at CERN in 1991. He gives it away for free. Within 30 years, half of humanity is connected. The web transforms commerce, politics, journalism, relationships, and how humans perceive reality.",
+    "mnemonic": "A quietly polite British physicist at CERN handing out a document titled 'information management: a proposal' — and then 30 years later, half the world's waking hours are spent on it.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "rwandan-genocide",
+    "name": "Rwandan Genocide",
+    "house": "Africa (Rwanda)",
+    "era": "Modern",
+    "start": 1994,
+    "end": null,
+    "fact": "In 100 days, approximately 800,000 Tutsi and moderate Hutu are systematically murdered in Rwanda. The international community watches and does nothing. The failure haunts the UN and Western governments for decades.",
+    "mnemonic": "100 days. 800,000 people. The international community's televisions watching it happen. The silence from every capital that could have acted.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "911",
+    "name": "9/11 Attacks",
+    "house": "USA / Global",
+    "era": "Modern",
+    "start": 2001,
+    "end": null,
+    "fact": "Al-Qaeda hijack four aircraft on 11 September 2001; two destroy the World Trade Center, one hits the Pentagon, one crashes in Pennsylvania. ~3,000 die. The resulting 'War on Terror' kills hundreds of thousands more and reshapes global geopolitics.",
+    "mnemonic": "A clear Tuesday morning in New York, a plane, a tower, and the moment the 21st century began — followed by twenty years of consequences the perpetrators could not have entirely predicted.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "iphone-smartphone",
+    "name": "iPhone Launched — Smartphone Age",
+    "house": "Global (USA)",
+    "era": "Modern",
+    "start": 2007,
+    "end": null,
+    "fact": "Steve Jobs unveils the iPhone on 9 January 2007, describing it as 'a widescreen iPod with touch controls, a revolutionary phone, and an internet communicator'. Within 15 years, 3 billion people carry a supercomputer in their pocket.",
+    "mnemonic": "Steve Jobs in a black turtleneck holding up a small glass rectangle like a holy relic, while every person in the audience simultaneously realises their current phone is now obsolete.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "global-financial-crisis",
+    "name": "Global Financial Crisis",
+    "house": "USA / Global",
+    "era": "Modern",
+    "start": 2008,
+    "end": 2009,
+    "fact": "The collapse of Lehman Brothers in September 2008 triggers the worst financial crisis since 1929. Governments spend trillions bailing out banks. Millions lose homes and jobs. The political anger it generates is still reshaping democracies.",
+    "mnemonic": "Lehman Brothers' sign being carried out of its own building by exhausted employees — then, in every capital city, governments handing enormous bags of money to the people who caused the problem.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "arab-spring",
+    "name": "Arab Spring",
+    "house": "Middle East / North Africa",
+    "era": "Modern",
+    "start": 2010,
+    "end": 2012,
+    "fact": "A Tunisian street vendor sets himself on fire in December 2010. Within months, revolutions sweep Egypt, Libya, Syria, and Yemen. Dictators fall; civil wars ignite; expectations rise then crash. Social media's first revolution.",
+    "mnemonic": "A single act of protest in Tunisia setting off protests across an entire region — some toppling dictators, some spiralling into civil wars — all filmed on mobile phones and shown to the world in real time.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  },
+  {
+    "type": "monarch",
+    "id": "covid-pandemic",
+    "name": "COVID-19 Global Pandemic",
+    "house": "Global",
+    "era": "Modern",
+    "start": 2020,
+    "end": 2022,
+    "fact": "A novel coronavirus first detected in Wuhan, China, becomes a global pandemic in March 2020. Lockdowns, economic collapse, 15–20 million dead. mRNA vaccines developed in under a year — the fastest vaccine in history. The world rearranges itself.",
+    "mnemonic": "The entire world's cities going silent simultaneously, motorways emptying, aircraft grounded — then scientists furiously working in laboratories, and 8 billion people staring at their walls waiting.",
+    "userEdits": {
+      "mnemonic": "",
+      "locus": "",
+      "dateImage": "",
+      "notes": ""
+    }
+  }
+]

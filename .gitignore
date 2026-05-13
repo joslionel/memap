@@ -1,0 +1,14 @@
+# Sensitive files
+app/.env
+*.txt
+
+# Claude session data
+.claude/
+
+# Build outputs
+app/dist/
+app/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  min-height: 100dvh;
+  margin: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+#root {
+  min-height: 100dvh;
+}

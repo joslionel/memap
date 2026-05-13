@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "name": "Greek Philosophers",
+    "subtitle": "Pre-Socratics to Neo-Platonists — The Examined Life",
+    "icon": "🏛",
+    "groupField": "school",
+    "dateStartField": "born",
+    "dateEndField": "died",
+    "extraUserFields": [],
+    "displayFields": [
+      { "key": "known_for", "label": "Known For" }
+    ]
+  },
+  "items": [
+    {
+      "id": "thales",
+      "name": "Thales of Miletus",
+      "school": "Pre-Socratics — Milesian",
+      "born": -624,
+      "died": -546,
+      "known_for": "Everything is water. First philosopher.",
+      "fact": "First recorded Western philosopher. Proposed that the fundamental substance of all things is water. Also predicted a solar eclipse and calculated the height of Egyptian pyramids using shadows. No writings survive.",
+      "mnemonic": "Thales (TALES — he told the first tale of the universe) a bearded sage standing knee-deep in water, pointing at the sea and declaring 'it's ALL water!' while predicting a solar eclipse on a notepad. Everything is wet.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "anaximander",
+      "name": "Anaximander",
+      "school": "Pre-Socratics — Milesian",
+      "born": -610,
+      "died": -546,
+      "known_for": "The Apeiron — the boundless, indefinite source of all things.",
+      "fact": "Student of Thales. Proposed the 'Apeiron' (the Boundless/Indefinite) as the first principle — not any concrete substance but an eternal, undefined source. Drew one of the first maps of the world. Theorised that humans evolved from fish-like creatures.",
+      "mnemonic": "Anaximander (ANIME-xander — picture an anime hero with a boundless power level ∞) drawing a map of the universe on parchment, pointing at an infinite void and saying 'THAT is what everything comes from.' His power level is literally boundless. He believes humans were once fish.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "anaximenes",
+      "name": "Anaximenes",
+      "school": "Pre-Socratics — Milesian",
+      "born": -586,
+      "died": -526,
+      "known_for": "Everything is air. Condensation and rarefaction.",
+      "fact": "Third Milesian. Said the fundamental substance is air — when condensed it becomes water, stone, earth; when rarefied, fire. Simple but elegant mechanism for change.",
+      "mnemonic": "Anaximenes (ANIME-MEAN-eez — a mean anime character who controls air, like an air-bender) compressing air in his fists to make rocks, then releasing it to make fire. Everything is just air at different pressures. He's a bender.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "pythagoras",
+      "name": "Pythagoras of Samos",
+      "school": "Pre-Socratics — Pythagorean",
+      "born": -570,
+      "died": -495,
+      "known_for": "Numbers are the essence of reality. The theorem. Metempsychosis.",
+      "fact": "Mathematics as philosophy. Believed numbers are the fundamental reality. Founded a secretive religious-philosophical community with bizarre rules (don't eat beans; don't step over a broomstick). Believed in transmigration of souls. The theorem bearing his name was likely known earlier but he proved it.",
+      "mnemonic": "Pythagoras (pie-THAG-orus — a man obsessed with triangles eating pie) measuring the universe with a right-angle triangle, refusing beans while insisting that numbers ARE reality. He runs a cult. His soul has been in a seagull before.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "xenophanes",
+      "name": "Xenophanes of Colophon",
+      "school": "Pre-Socratics — Eleatic",
+      "born": -570,
+      "died": -475,
+      "known_for": "Religious criticism. If horses had gods, they'd be horses.",
+      "fact": "Fierce critic of anthropomorphic religion. Argued that humans project their own image onto gods — Ethiopians make their gods black, Thracians make them blonde and blue-eyed. If horses could conceive of gods, they'd look like horses. Proposed one supreme divine being, unlike human forms.",
+      "mnemonic": "Xenophanes (ZEN-o-fanes — a Zen sage pointing at a horse praying to a horse-god) watching an Ethiopian, a Thracian, and a horse each draw their own god, all different, all mirrors of themselves. He shakes his head. 'You're all doing it wrong.'",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "heraclitus",
+      "name": "Heraclitus of Ephesus",
+      "school": "Pre-Socratics — Heraclitean",
+      "born": -535,
+      "died": -475,
+      "known_for": "Everything flows. You can't step in the same river twice. The Logos.",
+      "fact": "The 'Weeping Philosopher' / 'Dark Philosopher.' Everything is in perpetual flux — the only constant is change itself. Logos (reason/word) governs the universe. Famous for paradoxes. Reportedly died after treating dropsy by burying himself in cow dung.",
+      "mnemonic": "Heraclitus (HERA-clitus — Hera the goddess weeping into a river) standing in a river that keeps changing, crying 'you can't step into the same river twice!' Everything flows. He is famously miserable. He later dies in dung.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "parmenides",
+      "name": "Parmenides of Elea",
+      "school": "Pre-Socratics — Eleatic",
+      "born": -515,
+      "died": -450,
+      "known_for": "Being is. Nothing cannot exist. Change is an illusion.",
+      "fact": "The great anti-Heraclitus. Reality is one, eternal, unchanging — change and plurality are illusions of the senses. What IS cannot become what IS NOT. Being is; non-being is not. This was enormously influential despite (or because of) being maddening.",
+      "mnemonic": "Parmenides (PAR-men-ideas — a man who has one unchanging idea) sitting completely still, refusing to move. 'Nothing changes! Being just IS!' A river flows beside him, Heraclitus watches confused. Parmenides ignores it. 'Illusion.'",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "zeno-elea",
+      "name": "Zeno of Elea",
+      "school": "Pre-Socratics — Eleatic",
+      "born": -490,
+      "died": -430,
+      "known_for": "Paradoxes. Achilles and the tortoise. Motion is impossible.",
+      "fact": "Parmenides' student. Defended his master's position with devastating paradoxes. Achilles can never overtake a tortoise — he must first reach the midpoint, then the next midpoint, infinitely. Therefore motion is logically impossible. Aristotle called him the inventor of dialectic.",
+      "mnemonic": "Zeno (ZEE-no — like a game that freezes) watching Achilles (in full armour) trying desperately to overtake a tortoise, getting stuck in an infinite series of midpoints. The tortoise is smug. Zeno keeps subdividing the space with a ruler. Motion denied.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "empedocles",
+      "name": "Empedocles of Akragas",
+      "school": "Pre-Socratics — Pluralist",
+      "born": -494,
+      "died": -434,
+      "known_for": "Four elements: earth, water, fire, air. Love and Strife.",
+      "fact": "Proposed the four classical elements (earth, water, fire, air) driven by cosmic forces of Love (combining) and Strife (separating). Also believed in reincarnation. Allegedly proved his divinity by jumping into Mount Etna — only his bronze sandal was found.",
+      "mnemonic": "Empedocles (em-PED-o-cleeze — a pedalo boat made of the four elements) riding a pedalo through earth, water, fire, and air, propelled by LOVE, attacked by STRIFE, finally jumping into a volcano to prove he's a god. The sandal survives.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "anaxagoras",
+      "name": "Anaxagoras of Clazomenae",
+      "school": "Pre-Socratics — Pluralist",
+      "born": -500,
+      "died": -428,
+      "known_for": "Nous (Mind) sets the cosmos in motion. Sun is a hot rock, not a god.",
+      "fact": "First philosopher to live in Athens. Proposed 'Nous' (cosmic mind/intelligence) as the originating force that set the universe in motion. Correctly identified the sun as a hot glowing rock, not a god — was prosecuted for impiety. Fled Athens to avoid death.",
+      "mnemonic": "Anaxagoras (ANNA-eggs-agoras — Anna with an egg representing the cosmic mind) pointing at the sun, explaining it's just a very hot rock, not Apollo. Athenians are furious. A giant divine Mind (Nous) swirls in the background, stirring the cosmos like porridge. He has to flee.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "democritus",
+      "name": "Democritus of Abdera",
+      "school": "Pre-Socratics — Atomist",
+      "born": -460,
+      "died": -370,
+      "known_for": "Atoms and the void. Reality is atoms in empty space.",
+      "fact": "The Laughing Philosopher (contrast with Heraclitus the Weeper). Co-developed atomic theory with Leucippus: all reality consists of indivisible atoms (atomos = uncuttable) moving through void. Incredibly prescient. No divine intervention needed to explain nature.",
+      "mnemonic": "Democritus (DEMO-CRIT-us — a cheerful demolition critic) laughing as he smashes everything into smaller and smaller pieces, until he holds up a single atom: 'UNCUTTABLE! This is it!' Void everywhere. He's inexplicably happy about everything.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "aside-sophists",
+      "type": "aside",
+      "name": "⚡ The Sophists",
+      "school": "Pre-Socratics — Pluralist",
+      "born": -480,
+      "died": -380,
+      "fact": "The Sophists were professional teachers of rhetoric and argumentation who taught wealthy Athenians how to argue any side of a case for money. Key figures: Protagoras ('Man is the measure of all things'), Gorgias (argued nothing exists, and even if it did, we couldn't know it). Socrates despised them — they sold wisdom rather than seeking it, and prioritised persuasion over truth. 'Sophistry' became a pejorative. They were, however, genuinely important for developing logic and democratic debate.",
+      "mnemonic": "The Sophists: expensive lawyers before lawyers existed. They'd argue black was white for a fee. Socrates hated them personally.",
+      "userEdits": { "notes": "" }
+    },
+    {
+      "id": "socrates",
+      "name": "Socrates",
+      "school": "Classical — Socratic",
+      "born": -470,
+      "died": -399,
+      "known_for": "The Socratic method. 'I know that I know nothing.' Tried and executed.",
+      "fact": "The pivot of Western philosophy. Wrote nothing — all we know comes from Plato and Xenophon. Spent his life questioning prominent Athenians and revealing that their certainties were confused. Accused of impiety and corrupting the youth, he refused to flee and drank hemlock. 'The unexamined life is not worth living.'",
+      "mnemonic": "Socrates (SO-CRATES — a man carrying a crate full of questions) stopping every important Athenian on the street with a question: 'But what IS courage, really?' Everyone ends up confused and furious. He's barefoot, ugly by his own account, and absolutely certain he knows nothing. Eventually they poison him.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "plato",
+      "name": "Plato",
+      "school": "Classical — Platonic",
+      "born": -428,
+      "died": -348,
+      "known_for": "Theory of Forms. The Republic. The Allegory of the Cave. Founded the Academy.",
+      "fact": "Socrates' greatest student. The Forms: the material world is a shadow of perfect, eternal, abstract Forms (the Form of Beauty, Goodness, Justice etc). The Allegory of the Cave: we are like prisoners seeing only shadows of reality. Founded the first Western university — the Academy. Almost all pre-Platonic philosophy is reconstructed; Plato's work survives virtually complete.",
+      "mnemonic": "Plato (PLAY-doh — modelling clay world vs the perfect originals) watching people in a cave see only shadows of the Real world of Forms outside. He writes it all down in a series of dialogue-plays starring Socrates. His Academy is the world's first university.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "aristotle",
+      "name": "Aristotle",
+      "school": "Classical — Peripatetic",
+      "born": -384,
+      "died": -322,
+      "known_for": "Logic. The Unmoved Mover. Virtue Ethics. Classified everything. Tutor to Alexander.",
+      "fact": "Plato's greatest student; tutor to Alexander the Great. Founded the Lyceum. Systematised logic, biology, physics, politics, ethics, rhetoric, poetics. Rejected Plato's Forms — universals exist IN things, not beyond them. The Unmoved Mover: something must start motion without itself being moved. Virtue Ethics: virtue is the mean between extremes (courage = between cowardice and recklessness).",
+      "mnemonic": "Aristotle (ARISTO-tle — aristocratic toddler cataloguing everything) walking the Lyceum gardens, classifying every plant, animal, political system, and virtue with a clipboard, tutoring a teenage Alexander the Great on the side. He disagrees with his teacher Plato about almost everything.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "aside-hellenistic",
+      "type": "aside",
+      "name": "⚡ Hellenistic Philosophy — The Big Four Schools",
+      "school": "Hellenistic",
+      "born": -320,
+      "died": -30,
+      "fact": "After Alexander the Great's conquests, Greek philosophy spread across the Mediterranean. Four schools dominated: Epicureans (pleasure = freedom from pain/anxiety, seek ataraxia), Stoics (virtue is the only good; accept what you cannot control), Sceptics (suspend judgement on everything uncertain), and Cynics (reject all social conventions; live virtuously and simply like a dog). These schools were intensely practical — they were therapies for living, not just abstract systems.",
+      "mnemonic": "Four schools: EPICUREAN (lie in a garden with friends, avoid pain), STOIC (accept your fate and control only your reactions), SCEPTIC (withhold all judgement), CYNIC (live like a dog in a barrel). Diogenes the Cynic told Alexander the Great to get out of his sunlight.",
+      "userEdits": { "notes": "" }
+    },
+    {
+      "id": "epicurus",
+      "name": "Epicurus",
+      "school": "Hellenistic — Epicurean",
+      "born": -341,
+      "died": -270,
+      "known_for": "Pleasure (ataraxia) as the highest good. Fear of death is irrational. Atoms.",
+      "fact": "Pleasure is the highest good — but NOT hedonism. True pleasure is ataraxia (tranquility, freedom from anxiety and pain), achieved by simple pleasures, friendship, and philosophical contemplation. Death is nothing to fear: 'When death is, I am not; when I am, death is not.' Accepted Democritus's atomism. Lived simply in his garden ('The Garden') with friends, including women and slaves — scandalous.",
+      "mnemonic": "Epicurus (EPIC-urus — an epic cure for anxiety) sitting in a beautiful garden with diverse friends eating simple bread and cheese, absolutely serene. 'Death? When I'm dead I won't know about it!' He has found the EPIC CURE for anxiety. It is: be calm, eat simply, have good friends.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "zeno-citium",
+      "name": "Zeno of Citium",
+      "school": "Hellenistic — Stoic",
+      "born": -334,
+      "died": -262,
+      "known_for": "Founder of Stoicism. Virtue is the only good. The Stoa Poikile.",
+      "fact": "Founded Stoicism after shipwreck brought him to Athens. Taught at the Stoa Poikile (Painted Porch) — hence 'Stoic.' Virtue is the only true good; wealth, health, pleasure are 'preferred indifferents.' Live according to reason and nature. Famously died by holding his breath after stubbing his toe.",
+      "mnemonic": "Zeno of Citium (ZEE-no — like a CEO — a stoic CEO who survived a shipwreck) teaching from a painted porch after losing everything at sea. 'I have virtue. That's all I need.' He holds his breath until he dies rather than deal with a stubbed toe. Maximum stoicism.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "pyrrho",
+      "name": "Pyrrho of Elis",
+      "school": "Hellenistic — Pyrrhonian Sceptic",
+      "born": -360,
+      "died": -270,
+      "known_for": "Suspend all judgement. Epoché. Ataraxia through doubt.",
+      "fact": "Founder of Pyrrhonism — the most radical Greek scepticism. For every argument there is an equally good counter-argument, so suspend all judgement (epoché). The result is ataraxia — tranquility that comes from not committing to any view. Reportedly had to be pulled back from traffic by friends because he had suspended judgement about whether carts could harm him.",
+      "mnemonic": "Pyrrho (PIE-ro — a man who can't commit to what's in his pie) standing in the middle of a road looking uncertain as carts approach, while friends drag him aside. 'I SUSPEND JUDGEMENT on whether that cart is dangerous!' He is perfectly tranquil. Possibly about to die.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "diogenes-sinope",
+      "name": "Diogenes of Sinope",
+      "school": "Hellenistic — Cynic",
+      "born": -412,
+      "died": -323,
+      "known_for": "The Cynic. Lived in a barrel. Told Alexander the Great to get out of his sunlight.",
+      "fact": "The Cynic par excellence. Lived in a large ceramic jar (pithos) in Athens. Rejected all social conventions, wealth, status. When Alexander the Great visited and offered to grant any wish, Diogenes said: 'Stand out of my sunlight.' Alexander reportedly said: 'Were I not Alexander, I would wish to be Diogenes.' Carried a lamp in daylight 'looking for an honest man.'",
+      "mnemonic": "Diogenes (DI-AH-gen-eez — a dog-like man — Cynics = 'dog-like') living in a barrel, holding up a lamp in daylight, telling Alexander the Great to get out of his sun. He is the ultimate contrarian. He owns nothing and wants nothing. He is, according to himself, the freest man alive.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    },
+    {
+      "id": "plotinus",
+      "name": "Plotinus",
+      "school": "Neo-Platonic",
+      "born": 204,
+      "died": 270,
+      "known_for": "Neo-Platonism. The One. Emanation. Mystical union with the divine.",
+      "fact": "The last great ancient Greek philosopher. Founded Neo-Platonism. The universe emanates from 'The One' — beyond being and thought — like light from the sun. Soul descended into matter and can return to The One through philosophical contemplation. Hugely influential on early Christian theology. Reportedly ashamed of having a body.",
+      "mnemonic": "Plotinus (PLOT-in-us — a man plotting his escape from his body) sitting in meditation, rays of divine light emanating from a single brilliant source above him (The One), soul climbing back up toward it like a salmon going upstream. He finds his body embarrassing. He will influence Christianity enormously.",
+      "userEdits": { "mnemonic": "", "locus": "", "dateImage": "", "notes": "" }
+    }
+  ]
+}
