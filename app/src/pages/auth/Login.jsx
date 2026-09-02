@@ -4,15 +4,19 @@ import { supabase } from '../../lib/supabase'
 import { useAuth } from '../../contexts/AuthContext'
 import Button from '../../components/ui/Button'
 import { Input } from '../../components/ui/Input'
+import Tutorial from './Tutorial'
 
 export default function Login() {
   const { user } = useAuth()
+  const [mode, setMode] = useState('tutorial') // 'tutorial' | 'signin'
   const [email, setEmail] = useState('')
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
   if (user) return <Navigate to="/" replace />
+
+  if (mode === 'tutorial') return <Tutorial onSkipToSignIn={() => setMode('signin')} />
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -73,6 +77,15 @@ export default function Login() {
               No account needed — just enter your email and we'll send a link.
             </p>
           </form>
+        )}
+
+        {!sent && (
+          <button
+            onClick={() => setMode('tutorial')}
+            className="mt-6 w-full text-center text-sm text-amber-400 hover:text-amber-300 transition-colors"
+          >
+            New here? Try the 3-minute walkthrough →
+          </button>
         )}
       </div>
     </div>

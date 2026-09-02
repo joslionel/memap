@@ -1,12 +1,13 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getJourneys } from '../lib/db'
 import { useAuth } from '../contexts/AuthContext'
+import { loadTutorialStash, clearTutorialStash, materializeTutorial } from '../lib/tutorial'
 import Button from '../components/ui/Button'
 import Badge from '../components/ui/Badge'
 import Spinner from '../components/ui/Spinner'
 import EmptyState from '../components/ui/EmptyState'
-import { Map, ChevronRight, BookOpen, Brain } from 'lucide-react'
+import { Map, ChevronRight, BookOpen, Brain, Sparkles } from 'lucide-react'
 
 function JourneyCard({ journey }) {
   const dueCount = journey.due_count ?? 0
@@ -51,6 +52,8 @@ export default function Dashboard() {
   const { user } = useAuth()
   const [journeys, setJourneys] = useState([])
   const [loading, setLoading] = useState(true)
+  const [welcome, setWelcome] = useState(null) // { journeyId } once the tutorial palace is built
+  const materialising = useRef(false)
 
   useEffect(() => {
     getJourneys().then(({ data, error }) => {
@@ -58,6 +61,23 @@ export default function Dashboard() {
       setLoading(false)
     })
   }, [])
+
+  // First sign-in after the walkthrough — turn the stashed loci + imagery into a real journey.
+  useEffect(() => {
+    if (!user || materialising.current || !loadTutorialStash()) return
+    materialising.current = true
+    materializeTutorial(user.id)
+      .then((res) => {
+        if (res) {
+          setWelcome(res)
+          getJourneys().then(({ data }) => setJourneys(data ?? []))
+        }
+      })
+      .catch((err) => {
+        console.error('Could not build tutorial palace', err)
+        clearTutorialStash()
+      })
+  }, [user])
 
   const greeting = () => {
     const h = new Date().getHours()
@@ -73,6 +93,21 @@ export default function Dashboard() {
         <h1 className="text-2xl font-bold text-slate-100">{greeting()}</h1>
         <p className="text-slate-400 text-sm mt-1">{user?.email}</p>
       </div>
+
+      {welcome && (
+        <div className="mb-6 bg-amber-500/10 border border-amber-500/30 rounded-2xl p-5">
+          <p className="flex items-center gap-2 font-semibold text-amber-300">
+            <Sparkles size={16} /> Your first palace is ready
+          </p>
+          <p className="text-sm text-slate-300 mt-1">
+            The walk through your home is saved as <strong>My First Journey</strong>, with your ten
+            objects and imagery. Review it now to lock it in — then come back tomorrow.
+          </p>
+          <Link to={`/journeys/${welcome.journeyId}/review`}>
+            <Button size="sm" className="mt-3"><BookOpen size={14} /> Review it now</Button>
+          </Link>
+        </div>
+      )}
 
       {/* Journeys */}
       <div className="flex items-center justify-between mb-4">
