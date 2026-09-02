@@ -1,16 +1,17 @@
-import { useEffect, useState, useRef, useCallback } from 'react'
+import { useEffect, useState, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getJourney, updateAssignment, updateLocus, updateItem, logPractice } from '../../lib/db'
 import { sm2 } from '../../lib/sm2'
 import { STANDARD_FIELDS } from '../../lib/jsonImport'
+import { SortableList } from '../../components/SortableList'
 import ConfidenceRater from '../../components/ConfidenceRater'
 import Spinner from '../../components/ui/Spinner'
 import Button from '../../components/ui/Button'
 import { Input, Textarea } from '../../components/ui/Input'
-import { ArrowLeft, ArrowRight, Shuffle, ChevronRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Shuffle, ChevronRight, SlidersHorizontal } from 'lucide-react'
 
 const posKey = (id) => `review-pos:${id}`
-const fieldsKey = (id) => `review-fields:${id}`
+const configKey = (id) => `review-config:${id}`
 
 function readPos(id) {
   try {
@@ -25,27 +26,61 @@ function writePos(id, idx) {
   try { localStorage.setItem(posKey(id), String(idx)) } catch { /* ignore */ }
 }
 
-// Which fields the user has explicitly expanded / collapsed (overrides the defaults)
-function readFieldPrefs(id) {
-  try {
-    const v = JSON.parse(localStorage.getItem(fieldsKey(id)))
-    return v && typeof v === 'object' ? v : {}
-  } catch {
-    return {}
+// ─── Field model ─────────────────────────────────────────────────────────────
+// A review card is built from a flat, ordered list of fields. Locus data is
+// split into three fields so descriptor / notes can be hidden independently.
+
+const LOCUS_FIELDS = [
+  { key: 'locus.name',       label: 'Locus',       kind: 'locus', sub: 'name',       type: 'text' },
+  { key: 'locus.descriptor', label: 'Descriptor',  kind: 'locus', sub: 'descriptor', type: 'text' },
+  { key: 'locus.notes',      label: 'Locus notes', kind: 'locus', sub: 'notes',      type: 'textarea' },
+]
+
+const DEFAULT_ON = new Set(['locus.name', 'item.imagery'])
+
+/** All fields available for this journey — locus fields + every item field. */
+function buildAllFields(schema, assignments) {
+  const mergedData = {}
+  for (const a of assignments) Object.assign(mergedData, a?.memory_items?.data ?? {})
+  const base = schema && schema.length ? [...schema] : [...STANDARD_FIELDS]
+  const known = new Set(base.map(f => f.key))
+  for (const k of Object.keys(mergedData)) {
+    if (known.has(k)) continue
+    const label = k.charAt(0).toUpperCase() + k.slice(1).replace(/([A-Z])/g, ' $1')
+    const long = typeof mergedData[k] === 'string' && mergedData[k].length > 60
+    base.push({ key: k, label, type: long ? 'textarea' : 'text' })
   }
+  const item = base.map(f => ({
+    key: `item.${f.key}`, label: f.label, kind: 'item', sub: f.key,
+    type: f.type ?? 'text',
+  }))
+  return [...LOCUS_FIELDS, ...item]
 }
 
-function writeFieldPrefs(id, prefs) {
-  try { localStorage.setItem(fieldsKey(id), JSON.stringify(prefs)) } catch { /* ignore */ }
+function readConfig(id, allFields) {
+  let saved = {}
+  try { saved = JSON.parse(localStorage.getItem(configKey(id))) || {} } catch { saved = {} }
+  const on = saved.on && typeof saved.on === 'object' ? { ...saved.on } : {}
+  const heights = saved.heights && typeof saved.heights === 'object' ? { ...saved.heights } : {}
+  const known = new Set(allFields.map(f => f.key))
+  const order = (Array.isArray(saved.order) ? saved.order : []).filter(k => known.has(k))
+  for (const f of allFields) {
+    if (!order.includes(f.key)) order.push(f.key)
+    if (!(f.key in on)) on[f.key] = DEFAULT_ON.has(f.key)
+  }
+  return { order, on, heights }
 }
 
-// Open by default: the locus block and the imagery field. Everything else starts collapsed.
-const defaultOpen = (key) => key === '__locus__' || key === 'imagery'
+function writeConfig(id, cfg) {
+  try { localStorage.setItem(configKey(id), JSON.stringify(cfg)) } catch { /* ignore */ }
+}
 
 function previewOf(val) {
   const s = String(val ?? '').replace(/\s+/g, ' ').trim()
   return s.length > 60 ? s.slice(0, 60) + '…' : s
 }
+
+// ─── Small components ────────────────────────────────────────────────────────
 
 function Collapsible({ label, open, onToggle, preview, accent = false, children }) {
   return (
@@ -79,66 +114,130 @@ function SaveStatus({ state, className = '' }) {
   )
 }
 
-/** Field list for the item — schema fields plus any extra keys present in the data */
-function itemFields(schema, data) {
-  const base = schema && schema.length ? [...schema] : [...STANDARD_FIELDS]
-  const known = new Set(base.map(f => f.key))
-  for (const k of Object.keys(data ?? {})) {
-    if (known.has(k)) continue
-    const label = k.charAt(0).toUpperCase() + k.slice(1).replace(/([A-Z])/g, ' $1')
-    const long = typeof data[k] === 'string' && data[k].length > 60
-    base.push({ key: k, label, type: long ? 'textarea' : 'text' })
-  }
-  return base
+// ─── Setup screen ────────────────────────────────────────────────────────────
+
+function valueFor(field, assignment) {
+  if (!assignment) return ''
+  return field.kind === 'locus'
+    ? assignment.loci?.[field.sub] ?? ''
+    : assignment.memory_items?.data?.[field.sub] ?? ''
 }
 
-function StartPicker({ assignments, initialIndex, onStart }) {
+function sampleIndices(n, count) {
+  const pool = Array.from({ length: n }, (_, i) => i)
+  const out = []
+  while (out.length < Math.min(count, n)) {
+    out.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0])
+  }
+  return out.sort((a, b) => a - b)
+}
+
+function ReviewSetup({ assignments, allFields, config, onToggleField, onReorderFields, initialIndex, onStart }) {
   const [startIndex, setStartIndex] = useState(initialIndex ?? 0)
+  const [previewIdxs, setPreviewIdxs] = useState(() => sampleIndices(assignments.length, 5))
+
+  const orderedFields = config.order
+    .map(k => allFields.find(f => f.key === k))
+    .filter(Boolean)
+  const chosen = orderedFields.filter(f => config.on[f.key])
 
   return (
-    <div className="min-h-full bg-slate-900 flex items-center justify-center p-6">
-      <div className="w-full max-w-sm">
-        <div className="text-center mb-8">
-          <div className="text-5xl mb-4">🗺</div>
-          <h1 className="text-2xl font-bold text-slate-100 mb-2">Review Journey</h1>
-          <p className="text-slate-400 text-sm">{assignments.length} loci · scan &amp; edit freely</p>
+    <div className="min-h-full bg-slate-900">
+      <div className="max-w-lg mx-auto px-4 py-6">
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold text-slate-100">Set up your review</h1>
+          <p className="text-slate-400 text-sm mt-1">
+            {assignments.length} loci · pick what shows on each card and drag to reorder.
+          </p>
         </div>
 
-        <div className="bg-slate-800 rounded-2xl p-6 flex flex-col gap-4">
-          <div>
-            <p className="text-sm text-slate-400 mb-2">Start from</p>
-            <select
-              value={startIndex}
-              onChange={(e) => setStartIndex(Number(e.target.value))}
-              className="w-full bg-slate-700 border border-slate-600 rounded-xl px-3 py-2.5 text-slate-100 focus:outline-none focus:border-amber-500"
-            >
-              <option value={-1}>🔀 Random locus</option>
-              {assignments.map((a, i) => (
-                <option key={a.id} value={i}>
-                  {i + 1}. {a.loci?.name ?? 'Locus'}
-                  {a.memory_items?.data?.name ? ` — ${a.memory_items.data.name}` : ''}
-                </option>
-              ))}
-            </select>
-          </div>
+        {/* Field picker */}
+        <h2 className="text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">Fields to show</h2>
+        <p className="text-xs text-slate-500 mb-2">Checked fields open on every card. Unchecked ones stay collapsed — still one tap away.</p>
+        <SortableList
+          items={orderedFields}
+          onReorder={(items) => onReorderFields(items.map(f => f.key))}
+          keyExtractor={(f) => f.key}
+          renderItem={(f) => (
+            <label className={`flex items-center gap-3 rounded-xl border px-3 py-2.5 cursor-pointer select-none transition-colors ${
+              config.on[f.key] ? 'bg-slate-800 border-slate-600' : 'bg-slate-900/40 border-slate-800'
+            }`}>
+              <input
+                type="checkbox"
+                checked={!!config.on[f.key]}
+                onChange={() => onToggleField(f.key)}
+                className="accent-amber-500 shrink-0"
+              />
+              <span className={`text-sm ${config.on[f.key] ? 'text-slate-100' : 'text-slate-500'}`}>{f.label}</span>
+              <span className="text-[11px] text-slate-600 ml-auto shrink-0">{f.kind}</span>
+            </label>
+          )}
+        />
 
-          <Button
-            onClick={() => {
-              const idx = startIndex === -1
-                ? Math.floor(Math.random() * assignments.length)
-                : startIndex
-              onStart(idx)
-            }}
-            size="lg"
-            className="w-full"
+        {/* Start from */}
+        <h2 className="text-xs uppercase tracking-wider font-semibold text-slate-500 mt-6 mb-2">Start from</h2>
+        <select
+          value={startIndex}
+          onChange={(e) => setStartIndex(Number(e.target.value))}
+          className="w-full bg-slate-800 border border-slate-600 rounded-xl px-3 py-2.5 text-slate-100 focus:outline-none focus:border-amber-500"
+        >
+          <option value={-1}>🔀 Random locus</option>
+          {assignments.map((a, i) => (
+            <option key={a.id} value={i}>
+              {i + 1}. {a.loci?.name ?? 'Locus'}
+              {a.memory_items?.data?.name ? ` — ${a.memory_items.data.name}` : ''}
+            </option>
+          ))}
+        </select>
+
+        {/* Preview */}
+        <div className="flex items-center justify-between mt-6 mb-2">
+          <h2 className="text-xs uppercase tracking-wider font-semibold text-slate-500">Preview · 5 cards</h2>
+          <button
+            onClick={() => setPreviewIdxs(sampleIndices(assignments.length, 5))}
+            className="text-xs text-amber-400 hover:text-amber-300 flex items-center gap-1 transition-colors"
           >
-            Begin
-          </Button>
+            <Shuffle size={12} /> Shuffle
+          </button>
         </div>
+        <div className="flex flex-col gap-2">
+          {chosen.length === 0 ? (
+            <p className="text-sm text-slate-500 italic py-3">Select at least one field to preview.</p>
+          ) : previewIdxs.map((idx) => {
+            const a = assignments[idx]
+            if (!a) return null
+            return (
+              <div key={a.id} className="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                <p className="text-[11px] text-slate-500 mb-1.5">Card {idx + 1}</p>
+                <div className="flex flex-col gap-1.5">
+                  {chosen.map((f) => {
+                    const v = valueFor(f, a)
+                    return (
+                      <div key={f.key}>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500">{f.label}</span>
+                        <p className="text-sm text-slate-200 whitespace-pre-wrap line-clamp-3">{v || <span className="text-slate-600 italic">empty</span>}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        <Button
+          size="lg"
+          className="w-full mt-6"
+          onClick={() => onStart(startIndex === -1 ? Math.floor(Math.random() * assignments.length) : startIndex)}
+        >
+          Start review
+        </Button>
       </div>
     </div>
   )
 }
+
+// ─── Review session ──────────────────────────────────────────────────────────
 
 export default function ReviewSession() {
   const { id } = useParams()
@@ -147,6 +246,7 @@ export default function ReviewSession() {
   const [journey, setJourney] = useState(null)
   const [assignments, setAssignments] = useState([])
   const [schema, setSchema] = useState([])
+  const [config, setConfig] = useState(null)
   const [loading, setLoading] = useState(true)
   const [started, setStarted] = useState(false)
   const [current, setCurrent] = useState(0)
@@ -159,15 +259,8 @@ export default function ReviewSession() {
   const [isAside, setIsAside] = useState(false)
   const [saveState, setSaveState] = useState('idle') // idle | dirty | saving | saved
 
-  // Per-field collapsed/expanded state — persists across cards and sessions
-  const [fieldPrefs, setFieldPrefs] = useState(() => readFieldPrefs(id))
-  const isFieldOpen = (key) => fieldPrefs[key] ?? defaultOpen(key)
-  const toggleField = (key) =>
-    setFieldPrefs((p) => {
-      const next = { ...p, [key]: !(p[key] ?? defaultOpen(key)) }
-      writeFieldPrefs(id, next)
-      return next
-    })
+  // Per-field collapse overrides for this session (default comes from config.on)
+  const [openOverrides, setOpenOverrides] = useState({})
 
   // Refs so the unmount / keyboard handlers always see fresh values
   const assignmentsRef = useRef([])
@@ -183,14 +276,30 @@ export default function ReviewSession() {
     getJourney(id).then(({ data }) => {
       if (!data) { navigate('/journeys'); return }
       setJourney(data)
-      setSchema(data.memory_sets?.schema ?? [])
+      const sch = data.memory_sets?.schema ?? []
+      setSchema(sch)
       const sorted = [...(data.assignments ?? [])]
         .filter(a => a.loci && a.memory_items)
         .sort((a, b) => a.position - b.position)
       setAssignments(sorted)
+      setConfig(readConfig(id, buildAllFields(sch, sorted)))
       setLoading(false)
     })
   }, [id, navigate])
+
+  const allFields = useMemo(() => buildAllFields(schema, assignments), [schema, assignments])
+
+  const updateConfig = useCallback((updater) => {
+    setConfig((c) => {
+      const next = updater(c)
+      writeConfig(id, next)
+      return next
+    })
+  }, [id])
+
+  const toggleFieldOn = (key) => updateConfig((c) => ({ ...c, on: { ...c.on, [key]: !c.on[key] } }))
+  const reorderFields = (keys) => updateConfig((c) => ({ ...c, order: keys }))
+  const setFieldHeight = (key, px) => updateConfig((c) => ({ ...c, heights: { ...c.heights, [key]: px } }))
 
   const loadDrafts = useCallback((idx) => {
     const a = assignmentsRef.current[idx]
@@ -288,12 +397,18 @@ export default function ReviewSession() {
   }, [goTo])
 
   const handleStart = (idx) => {
+    const clamped = Math.max(0, Math.min(idx, assignments.length - 1))
     setStarted(true)
-    setCurrent(idx)
-    loadDrafts(idx)
+    setCurrent(clamped)
+    loadDrafts(clamped)
     setConfidence(null)
     setRated(false)
-    writePos(id, idx)
+    writePos(id, clamped)
+  }
+
+  const backToSetup = async () => {
+    await saveCurrent()
+    setStarted(false)
   }
 
   const editLocus = (k, v) => { setLocusDraft(d => ({ ...d, [k]: v })); dirtyRef.current = true; setSaveState('dirty') }
@@ -328,7 +443,7 @@ export default function ReviewSession() {
     return () => window.removeEventListener('keydown', handler)
   }, [started, move])
 
-  if (loading) return (
+  if (loading || !config) return (
     <div className="flex items-center justify-center py-24"><Spinner size="lg" /></div>
   )
 
@@ -341,8 +456,12 @@ export default function ReviewSession() {
 
   if (!started) {
     return (
-      <StartPicker
+      <ReviewSetup
         assignments={assignments}
+        allFields={allFields}
+        config={config}
+        onToggleField={toggleFieldOn}
+        onReorderFields={reorderFields}
         initialIndex={Math.min(readPos(id), assignments.length - 1)}
         onStart={handleStart}
       />
@@ -350,12 +469,23 @@ export default function ReviewSession() {
   }
 
   const assignment = assignments[current]
-  const fields = itemFields(schema, assignment?.memory_items?.data)
   const total = assignments.length
+
+  const isOpen = (key) => openOverrides[key] ?? config.on[key] ?? false
+  const toggleOpen = (key) =>
+    setOpenOverrides((o) => ({ ...o, [key]: !(o[key] ?? config.on[key] ?? false) }))
+
+  const orderedFields = config.order.map(k => allFields.find(f => f.key === k)).filter(Boolean)
+  const renderFields = [
+    ...orderedFields.filter(f => config.on[f.key]),
+    ...orderedFields.filter(f => !config.on[f.key]),
+  ]
+  const fieldValue = (f) => f.kind === 'locus' ? (locusDraft[f.sub] ?? '') : (itemDraft[f.sub] ?? '')
+  const editFieldValue = (f, v) => f.kind === 'locus' ? editLocus(f.sub, v) : editItem(f.sub, v)
 
   return (
     <div className="flex flex-col min-h-full bg-slate-900">
-      {/* Sticky header — jump / position / random */}
+      {/* Sticky header — setup / jump / position / random */}
       <header className="sticky top-0 z-20 bg-slate-900/95 backdrop-blur border-b border-slate-800">
         <div className="max-w-2xl mx-auto px-3 py-2.5 flex items-center gap-2">
           <button
@@ -364,6 +494,13 @@ export default function ReviewSession() {
             className="p-2 rounded-xl hover:bg-slate-800 text-slate-400 hover:text-slate-100 transition-colors shrink-0"
           >
             <ArrowLeft size={18} />
+          </button>
+          <button
+            onClick={backToSetup}
+            title="Review setup"
+            className="p-2 rounded-xl hover:bg-slate-800 text-slate-400 hover:text-slate-100 transition-colors shrink-0"
+          >
+            <SlidersHorizontal size={16} />
           </button>
           <select
             value={current}
@@ -396,70 +533,44 @@ export default function ReviewSession() {
 
       {/* Card body */}
       <div className="flex-1 w-full max-w-2xl mx-auto px-4 py-5">
-        {journey?.name && (
-          <p className="text-xs text-slate-500 mb-3">{journey.name}</p>
-        )}
-
-        {/* Locus — editable, open by default */}
-        <div className="mb-3">
-          <Collapsible
-            label={`Locus ${current + 1}`}
-            accent
-            open={isFieldOpen('__locus__')}
-            onToggle={() => toggleField('__locus__')}
-            preview={previewOf(locusDraft.name)}
-          >
-            <Input
-              value={locusDraft.name}
-              onChange={(e) => editLocus('name', e.target.value)}
-              placeholder="Locus name"
-              className="text-lg font-semibold"
-            />
-            <Input
-              value={locusDraft.descriptor}
-              onChange={(e) => editLocus('descriptor', e.target.value)}
-              placeholder="Descriptor — what it looks like"
-            />
-            <Textarea
-              rows={2}
-              value={locusDraft.notes}
-              onChange={(e) => editLocus('notes', e.target.value)}
-              placeholder="Notes"
-            />
-          </Collapsible>
+        <div className="flex items-center justify-between mb-3">
+          <p className="text-xs text-slate-500 truncate">{journey?.name}</p>
+          <div className="flex items-center gap-3 shrink-0">
+            <label className="flex items-center gap-1.5 text-xs text-slate-400 cursor-pointer select-none">
+              <input type="checkbox" checked={isAside} onChange={(e) => toggleAside(e.target.checked)} className="accent-amber-500" />
+              Aside
+            </label>
+            <SaveStatus state={saveState} />
+          </div>
         </div>
 
-        {/* Memory item — one collapsible field each; only imagery open by default */}
-        <div className="mb-3 flex flex-col gap-2">
-          <div className="flex items-center justify-between px-1">
-            <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Memory item</p>
-            <div className="flex items-center gap-3">
-              <label className="flex items-center gap-1.5 text-xs text-slate-400 cursor-pointer select-none">
-                <input type="checkbox" checked={isAside} onChange={(e) => toggleAside(e.target.checked)} className="accent-amber-500" />
-                Aside
-              </label>
-              <SaveStatus state={saveState} />
-            </div>
-          </div>
-          {fields.map(field => (
+        <div className="flex flex-col gap-2">
+          {renderFields.map((f) => (
             <Collapsible
-              key={field.key}
-              label={field.label}
-              open={isFieldOpen(field.key)}
-              onToggle={() => toggleField(field.key)}
-              preview={previewOf(itemDraft[field.key])}
+              key={f.key}
+              label={f.key === 'locus.name' ? `Locus ${current + 1}` : f.label}
+              accent={f.key === 'locus.name'}
+              open={isOpen(f.key)}
+              onToggle={() => toggleOpen(f.key)}
+              preview={previewOf(fieldValue(f))}
             >
-              {field.type === 'textarea' ? (
+              {f.type === 'textarea' ? (
                 <Textarea
-                  rows={field.key === 'imagery' ? 5 : 3}
-                  value={itemDraft[field.key] ?? ''}
-                  onChange={(e) => editItem(field.key, e.target.value)}
+                  rows={f.key === 'item.imagery' ? 5 : 3}
+                  style={config.heights[f.key] ? { height: config.heights[f.key] } : undefined}
+                  onMouseUp={(e) => {
+                    const h = e.currentTarget.offsetHeight
+                    if (h && h !== config.heights[f.key]) setFieldHeight(f.key, h)
+                  }}
+                  value={fieldValue(f)}
+                  onChange={(e) => editFieldValue(f, e.target.value)}
                 />
               ) : (
                 <Input
-                  type={field.type === 'year' || field.type === 'number' ? 'number' : 'text'}
-                  value={itemDraft[field.key] ?? ''}
-                  onChange={(e) => editItem(field.key, e.target.value)}
+                  type={f.type === 'year' || f.type === 'number' ? 'number' : 'text'}
+                  className={f.key === 'locus.name' ? 'text-lg font-semibold' : ''}
+                  value={fieldValue(f)}
+                  onChange={(e) => editFieldValue(f, e.target.value)}
                 />
               )}
             </Collapsible>
@@ -467,7 +578,7 @@ export default function ReviewSession() {
         </div>
 
         {/* Confidence rating */}
-        <div className="mb-4">
+        <div className="mt-5 mb-4">
           <p className="text-sm text-slate-400 mb-3 text-center">How well did you recall this?</p>
           <ConfidenceRater value={confidence} onChange={handleRate} />
           {rated && (
