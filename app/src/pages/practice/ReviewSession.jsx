@@ -7,9 +7,10 @@ import ConfidenceRater from '../../components/ConfidenceRater'
 import Spinner from '../../components/ui/Spinner'
 import Button from '../../components/ui/Button'
 import { Input, Textarea } from '../../components/ui/Input'
-import { ArrowLeft, ArrowRight, Shuffle } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Shuffle, ChevronRight } from 'lucide-react'
 
 const posKey = (id) => `review-pos:${id}`
+const fieldsKey = (id) => `review-fields:${id}`
 
 function readPos(id) {
   try {
@@ -22,6 +23,46 @@ function readPos(id) {
 
 function writePos(id, idx) {
   try { localStorage.setItem(posKey(id), String(idx)) } catch { /* ignore */ }
+}
+
+// Which fields the user has explicitly expanded / collapsed (overrides the defaults)
+function readFieldPrefs(id) {
+  try {
+    const v = JSON.parse(localStorage.getItem(fieldsKey(id)))
+    return v && typeof v === 'object' ? v : {}
+  } catch {
+    return {}
+  }
+}
+
+function writeFieldPrefs(id, prefs) {
+  try { localStorage.setItem(fieldsKey(id), JSON.stringify(prefs)) } catch { /* ignore */ }
+}
+
+// Open by default: the locus block and the imagery field. Everything else starts collapsed.
+const defaultOpen = (key) => key === '__locus__' || key === 'imagery'
+
+function previewOf(val) {
+  const s = String(val ?? '').replace(/\s+/g, ' ').trim()
+  return s.length > 60 ? s.slice(0, 60) + '…' : s
+}
+
+function Collapsible({ label, open, onToggle, preview, accent = false, children }) {
+  return (
+    <div className={`rounded-xl border overflow-hidden ${accent ? 'border-amber-500/30 bg-slate-800' : 'border-slate-700/70 bg-slate-900/40'}`}>
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-expanded={open}
+        className="w-full flex items-center gap-2 px-3 py-2.5 text-left hover:bg-slate-700/30 transition-colors"
+      >
+        <ChevronRight size={13} className={`shrink-0 transition-transform ${open ? 'rotate-90' : ''} ${accent ? 'text-amber-400' : 'text-slate-500'}`} />
+        <span className={`text-xs uppercase tracking-wider font-semibold shrink-0 ${accent ? 'text-amber-400' : 'text-slate-400'}`}>{label}</span>
+        {!open && preview && <span className="text-xs text-slate-500 truncate">{preview}</span>}
+      </button>
+      {open && <div className="px-3 pb-3 pt-0.5 flex flex-col gap-3">{children}</div>}
+    </div>
+  )
 }
 
 function SaveStatus({ state, className = '' }) {
@@ -117,6 +158,16 @@ export default function ReviewSession() {
   const [itemDraft, setItemDraft] = useState({})
   const [isAside, setIsAside] = useState(false)
   const [saveState, setSaveState] = useState('idle') // idle | dirty | saving | saved
+
+  // Per-field collapsed/expanded state — persists across cards and sessions
+  const [fieldPrefs, setFieldPrefs] = useState(() => readFieldPrefs(id))
+  const isFieldOpen = (key) => fieldPrefs[key] ?? defaultOpen(key)
+  const toggleField = (key) =>
+    setFieldPrefs((p) => {
+      const next = { ...p, [key]: !(p[key] ?? defaultOpen(key)) }
+      writeFieldPrefs(id, next)
+      return next
+    })
 
   // Refs so the unmount / keyboard handlers always see fresh values
   const assignmentsRef = useRef([])
@@ -349,56 +400,69 @@ export default function ReviewSession() {
           <p className="text-xs text-slate-500 mb-3">{journey.name}</p>
         )}
 
-        {/* Locus — editable */}
-        <div className="bg-slate-800 rounded-2xl p-5 mb-4 border border-amber-500/30 flex flex-col gap-3">
-          <div className="flex items-center justify-between">
-            <p className="text-xs text-amber-400 uppercase tracking-wider font-semibold">Locus {current + 1}</p>
-            <SaveStatus state={saveState} />
-          </div>
-          <Input
-            value={locusDraft.name}
-            onChange={(e) => editLocus('name', e.target.value)}
-            placeholder="Locus name"
-            className="text-lg font-semibold"
-          />
-          <Input
-            value={locusDraft.descriptor}
-            onChange={(e) => editLocus('descriptor', e.target.value)}
-            placeholder="Descriptor — what it looks like"
-          />
-          <Textarea
-            rows={2}
-            value={locusDraft.notes}
-            onChange={(e) => editLocus('notes', e.target.value)}
-            placeholder="Notes"
-          />
+        {/* Locus — editable, open by default */}
+        <div className="mb-3">
+          <Collapsible
+            label={`Locus ${current + 1}`}
+            accent
+            open={isFieldOpen('__locus__')}
+            onToggle={() => toggleField('__locus__')}
+            preview={previewOf(locusDraft.name)}
+          >
+            <Input
+              value={locusDraft.name}
+              onChange={(e) => editLocus('name', e.target.value)}
+              placeholder="Locus name"
+              className="text-lg font-semibold"
+            />
+            <Input
+              value={locusDraft.descriptor}
+              onChange={(e) => editLocus('descriptor', e.target.value)}
+              placeholder="Descriptor — what it looks like"
+            />
+            <Textarea
+              rows={2}
+              value={locusDraft.notes}
+              onChange={(e) => editLocus('notes', e.target.value)}
+              placeholder="Notes"
+            />
+          </Collapsible>
         </div>
 
-        {/* Memory item — editable */}
-        <div className="bg-slate-800 rounded-2xl p-5 mb-4 flex flex-col gap-3">
-          <div className="flex items-center justify-between">
+        {/* Memory item — one collapsible field each; only imagery open by default */}
+        <div className="mb-3 flex flex-col gap-2">
+          <div className="flex items-center justify-between px-1">
             <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Memory item</p>
-            <label className="flex items-center gap-1.5 text-xs text-slate-400 cursor-pointer select-none">
-              <input type="checkbox" checked={isAside} onChange={(e) => toggleAside(e.target.checked)} className="accent-amber-500" />
-              Aside
-            </label>
+            <div className="flex items-center gap-3">
+              <label className="flex items-center gap-1.5 text-xs text-slate-400 cursor-pointer select-none">
+                <input type="checkbox" checked={isAside} onChange={(e) => toggleAside(e.target.checked)} className="accent-amber-500" />
+                Aside
+              </label>
+              <SaveStatus state={saveState} />
+            </div>
           </div>
-          {fields.map(field => field.type === 'textarea' ? (
-            <Textarea
+          {fields.map(field => (
+            <Collapsible
               key={field.key}
               label={field.label}
-              rows={field.key === 'imagery' ? 5 : 3}
-              value={itemDraft[field.key] ?? ''}
-              onChange={(e) => editItem(field.key, e.target.value)}
-            />
-          ) : (
-            <Input
-              key={field.key}
-              label={field.label}
-              type={field.type === 'year' || field.type === 'number' ? 'number' : 'text'}
-              value={itemDraft[field.key] ?? ''}
-              onChange={(e) => editItem(field.key, e.target.value)}
-            />
+              open={isFieldOpen(field.key)}
+              onToggle={() => toggleField(field.key)}
+              preview={previewOf(itemDraft[field.key])}
+            >
+              {field.type === 'textarea' ? (
+                <Textarea
+                  rows={field.key === 'imagery' ? 5 : 3}
+                  value={itemDraft[field.key] ?? ''}
+                  onChange={(e) => editItem(field.key, e.target.value)}
+                />
+              ) : (
+                <Input
+                  type={field.type === 'year' || field.type === 'number' ? 'number' : 'text'}
+                  value={itemDraft[field.key] ?? ''}
+                  onChange={(e) => editItem(field.key, e.target.value)}
+                />
+              )}
+            </Collapsible>
           ))}
         </div>
 
