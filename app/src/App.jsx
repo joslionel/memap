@@ -32,10 +32,7 @@ export default function App() {
     <Routes>
       <Route path="/login" element={<Login />} />
 
-      {/* Full-screen practice sessions — no nav chrome */}
-      <Route path="/journeys/:id/review" element={
-        <ProtectedRoute><ReviewSession /></ProtectedRoute>
-      } />
+      {/* Full-screen practice session — no nav chrome (focused recall test) */}
       <Route path="/journeys/:id/practice" element={
         <ProtectedRoute><PracticeSession /></ProtectedRoute>
       } />
@@ -53,6 +50,7 @@ export default function App() {
         <Route path="/journeys" element={<JourneyList />} />
         <Route path="/journeys/new" element={<JourneyEditor />} />
         <Route path="/journeys/:id" element={<JourneyEditor />} />
+        <Route path="/journeys/:id/review" element={<ReviewSession />} />
       </Route>
     </Routes>
   )

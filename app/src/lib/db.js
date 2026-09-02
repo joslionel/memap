@@ -22,6 +22,9 @@ export const deletePalace = (id) =>
 export const upsertLoci = (loci) =>
   supabase.from('loci').upsert(loci, { onConflict: 'id' }).select()
 
+export const updateLocus = (id, data) =>
+  supabase.from('loci').update(data).eq('id', id).select().single()
+
 export const deleteLocus = (id) =>
   supabase.from('loci').delete().eq('id', id)
 
